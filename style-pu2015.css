@@ -1,0 +1,3303 @@
+/*
+Theme Name: Purdue 2015
+Version: 1.0
+Tags: Responsive, Bootstrap, Purdue, 2014, Font Awesome, Advanced Custom Fields, The Events Calendar
+
+License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+License URI: http://creativecommons.org/licenses/by-sa/3.0/
+
+*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,ul {
+    list-style: none;
+}
+
+blockquote,q {
+    quotes: none;
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    background-color: #3b3b3b;
+    font-size: 100%;
+}
+
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    color: #171717;
+
+}
+
+@media (min-width: 768px) {
+    body {
+        font-family: "Open Sans", Arial, sans-serif;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        font-size: 1.125em;
+        line-height: 1.33333em;
+    }
+}
+
+h1 {
+    padding-top: 0;
+    padding-bottom: .25em;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 700;
+    color: #b1810b;
+    font-size: 2.25em;
+    line-height: 1.1em;
+}
+
+h2 {
+    padding-top: 1em;
+    padding-bottom: .15em;
+    font-family: "Open Sans", Arial, sans-serif;
+    color: #b1810b;
+    font-size: 2em;
+    line-height: 1.2em;
+}
+
+h3 {
+    padding-top: 1em;
+    font-family: "Open Sans", Arial, sans-serif;
+    color: #b1810b;
+    font-size: 1.75em;
+    line-height: 1.2em;
+}
+
+h4 {
+    padding-top: 1em;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 1.2em;
+}
+
+h5 {
+    padding-top: 1.5em;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1.25em;
+    line-height: 1.2em;
+    text-transform: uppercase;
+}
+
+h6 {
+    padding-top: 2em;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1.2em;
+    text-transform: uppercase;
+}
+
+h1 a:link,h2 a:link,h3 a:link,h4 a:link,h5 a:link,h6 a:link {
+    color: inherit;
+    font-weight: inherit;
+}
+
+h1 a:visited,h2 a:visited,h3 a:visited,h4 a:visited,h5 a:visited,h6 a:visited {
+    color: inherit;
+    font-weight: inherit;
+}
+
+h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover {
+    color: inherit;
+    font-weight: inherit;
+}
+
+h1 a:active,h2 a:active,h3 a:active,h4 a:active,h5 a:active,h6 a:active {
+    color: inherit;
+    font-weight: inherit;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1+h3 {
+    padding-top: 0;
+}
+
+h3+h6,h4+h6 {
+    padding-top: 1em;
+}
+
+h4+h5,h5+h6 {
+    padding-top: .75em;
+}
+
+h2+h6,h3+h5,h3+h4 {
+    padding-top: .5em;
+}
+
+h1+h4,h1+h5,h1+h6,h2+h3,h2+h4,h2+h5 {
+    padding-top: .25em;
+}
+
+h1+h2 {
+    padding-top: .15em;
+}
+
+p {
+    margin: 0 !important;
+    padding: 7.5px 0;
+}
+
+small {
+    font-size: .75em;
+    line-height: 1em;
+}
+
+big {
+    font-size: 1.25em;
+    line-height: 1em;
+}
+
+a:link {
+    color: #000;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #000;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #000;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+a:active {
+    color: #000;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+ul,ol {
+    padding: 10px 0 10px 35px;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ul ul {
+    padding-top: 0;
+    padding-bottom: 0;
+    list-style-type: circle;
+}
+
+ul ul ul {
+    list-style-type: square;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+strong,b {
+    font-weight: 700;
+}
+
+i,em {
+    font-style: italic;
+}
+
+u {
+    text-decoration: underline;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.transition {
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+    -o-transition-duration: .3s;
+    transition-duration: .3s;
+    -ms-transition-duration: .3s;
+}
+
+.goldbar {
+    min-height: 0 !important;
+    margin: 0;
+    padding: 3px 0;
+    border-radius: 0;
+    border: none;
+    background-color: #b1810b;
+    color: #fff;
+    box-shadow: 0 2px 10px #1e1e1e;
+}
+
+.goldbar a:link {
+    background-color: transparent !important;
+    color: #fff !important;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.goldbar a:visited {
+    background-color: transparent !important;
+    color: #fff !important;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.goldbar a:hover {
+    background-color: transparent !important;
+    color: #000 !important;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.goldbar a:active {
+    background-color: transparent !important;
+    color: #000 !important;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.goldbar button {
+    border: none;
+}
+
+.goldbar button:hover,.goldbar button:focus {
+    background-color: transparent !important;
+    border: none;
+}
+
+.goldbar .navbar-header button.navbar-toggle {
+    padding: 2px 15px;
+    font-size: 1em;
+}
+
+.goldbar .navbar-header button.navbar-toggle .icon-bar {
+    float: left;
+    clear: left;
+    margin-right: 10px;
+    background-color: #fff;
+}
+
+.goldbar .navbar-header button.navbar-toggle>.icon-bar:first-child {
+    margin-top: 3px;
+}
+
+.goldbar .navbar-header button.navbar-toggle:hover {
+    color: #000;
+}
+
+.goldbar .navbar-header button.navbar-toggle:hover .icon-bar {
+    background-color: #000;
+}
+
+.goldbar #search {
+    border: none;
+}
+
+.goldbar #search>ul {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.goldbar #search a.dropdown-toggle {
+    padding: 4px 20px 4px 0 !important;
+}
+
+.goldbar #search .open a.dropdown-toggle {
+    color: #000 !important;
+}
+
+.goldbar #search .dropdown-menu {
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: #b1810b;
+    padding: 5px;
+}
+
+.goldbar #search .dropdown-menu .form-group {
+    margin: 0;
+}
+
+.goldbar #search .dropdown-menu .form-group #cse-search-form .gsc-control-searchbox-only form.gsc-search-box table.gsc-search-box {
+    margin: 0;
+}
+
+.goldbar #search .dropdown-menu .form-group #cse-search-form .gsc-control-searchbox-only form.gsc-search-box table.gsc-search-box .gsc-input {
+    padding: 0;
+}
+
+.goldbar #search .dropdown-menu .form-group #cse-search-form .gsc-control-searchbox-only form.gsc-search-box table.gsc-search-box .gsc-input input.gsc-input {
+    width: 200px;
+    padding: 3px 6px;
+    color: #000;
+    font-size: 1.23077em;
+}
+
+.goldbar #search .dropdown-menu .form-group #cse-search-form .gsc-control-searchbox-only form.gsc-search-box table.gsc-search-box .gsc-search-button {
+    display: none;
+}
+
+.goldbar #search .dropdown-menu .form-group #cse-search-form .gsc-control-searchbox-only form.gsc-search-box table.gsc-search-box .gsc-clear-button {
+    display: none;
+}
+
+.goldbar #search .dropdown-menu .form-group #cse-search-form .gsc-control-searchbox-only form.gsc-search-box table.gsc-branding {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .goldbar #search {
+        width: 100%;
+        max-height: none;
+        margin: 0;
+    }
+
+    .goldbar #search .nav {
+        margin: 0 -15px;
+    }
+
+    .goldbar #search .nav .dropdown {
+        position: static;
+    }
+
+    .goldbar #search .nav .dropdown-toggle {
+        display: none;
+    }
+
+    .goldbar #search .nav .dropdown-menu {
+        position: static;
+        display: block;
+        width: 100%;
+        box-shadow: none;
+        border: none;
+        padding: 0 0 15px;
+    }
+
+    .goldbar #search .nav .dropdown-menu .form-group {
+        margin: 0;
+    }
+
+    .goldbar #search .nav .dropdown-menu .form-group #cse-search-form .gsc-control-searchbox-only form.gsc-search-box table.gsc-search-box .gsc-input {
+        width: 100%;
+    }
+
+    .goldbar #search .nav .dropdown-menu .form-group #cse-search-form .gsc-control-searchbox-only form.gsc-search-box table.gsc-search-box .gsc-input input.gsc-input {
+        width: 100%;
+        font-size: 1.45455em;
+    }
+}
+
+@media (min-width: 768px) {
+    .goldbar .quickLinkLabel {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .goldbar .quickLinkLabel {
+        display: block;
+        float: left;
+    }
+}
+
+.goldbar .gold {
+    padding-left: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.goldbar .gold>ul {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.goldbar .gold .open a.dropdown-toggle {
+    color: #000 !important;
+}
+
+.goldbar .gold .dropdown-menu {
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: #b1810b;
+    font-size: 1.09091em;
+    text-transform: none;
+}
+
+.goldbar .gold .dropdown-menu a {
+    padding: 3px 15px;
+}
+
+@media (min-width: 768px) {
+    .goldbar .gold {
+        left: -20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .goldbar {
+        font-size: .875em;
+    }
+
+    .goldbar .gold .navbar-nav>li>a {
+        padding: 4px 20px 4px 0 !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .goldbar {
+        font-size: .88889em;
+    }
+
+    .goldbar .gold {
+        position: static;
+        clear: both;
+        font-size: .875em;
+        max-height: none;
+        overflow: hidden;
+        text-transform: none;
+        padding: 0 0 15px;
+        border: none;
+    }
+
+    .goldbar .gold .navbar-nav {
+        font-size: 1em;
+        margin: 0;
+        padding: 0 15px;
+        float: left;
+        width: 50%;
+    }
+
+    .goldbar .gold .navbar-nav .dropdown {
+        float: left;
+        width: 100%;
+    }
+
+    .goldbar .gold .navbar-nav .dropdown .dropdown-toggle {
+        display: none;
+    }
+
+    .goldbar .gold .navbar-nav .dropdown .dropdown-menu {
+        display: block;
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        padding: 0;
+        font-size: 1em;
+    }
+
+    .goldbar .gold .navbar-nav .hide {
+        font-size: 1.14286em;
+        display: block !important;
+        color: #000;
+    }
+
+    .goldbar .gold .navbar-nav a {
+        line-height: 1.42857em;
+        white-space: normal;
+        padding: 5px 0;
+    }
+}
+
+.top {
+    width: 100%;
+    background-image: url(https://purdue.edu/purdue/images/templateElements/2015/stripes-tile.png);
+    background-repeat: repeat;
+}
+
+.top .logo {
+    padding: 25px 15px;
+}
+
+.top .logo a {
+    display: block;
+}
+
+.top .logo a img {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .top .logo a {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .top .logo a {
+        margin: 0 auto;
+        width: 50%;
+    }
+}
+
+.top .department {
+    color: #fff;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    letter-spacing: 1px;
+}
+
+.top .department>a {
+    display: inline-block;
+    padding: 2px 10px;
+    line-height: 1.2em;
+}
+
+@media (min-width: 768px) {
+    .top .department>a {
+        border-left: solid 1px #b1810b;
+    }
+}
+
+@media (max-width: 767px) {
+    .top .department>a {
+        border: none;
+    }
+}
+
+.top .department>a:link {
+    color: inherit;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+.top .department>a:visited {
+    color: inherit;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+.top .department>a:hover {
+    color: inherit;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+.top .department>a:active {
+    color: inherit;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+.top .department .tagline {
+    display: block;
+    clear: left;
+    color: inherit;
+    font-size: .52em;
+    line-height: 1.3em;
+}
+
+.top .department .tagline a:link {
+    color: inherit;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.top .department .tagline a:visited {
+    color: inherit;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.top .department .tagline a:hover {
+    color: inherit;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.top .department .tagline a:active {
+    color: inherit;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .top .department .tagline {
+        padding: 0 10px 2px;
+        border-left: solid 1px #b1810b;
+    }
+}
+
+@media (max-width: 767px) {
+    .top .department .tagline {
+        padding: 10px 0 0;
+        border: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .top .department {
+        padding: 30px 15px 15px;
+        font-size: 1.5625em;
+        font-weight: 100;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .top .department {
+        padding: 30px 15px 15px;
+        font-size: 1.25em;
+        font-weight: 100;
+    }
+}
+
+@media (max-width: 767px) {
+    .top .department {
+        padding: 0 15px 30px;
+        font-size: 1.33333em;
+        font-weight: 400;
+        text-align: center;
+    }
+}
+
+.blackbar {
+    min-height: initial;
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: #000;
+}
+
+.blackbar>ul {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+@media (min-width: 992px) {
+    .blackbar li {
+        color: #fff;
+    }
+
+    .blackbar li:hover {
+        color: #b1810b;
+    }
+}
+
+@media (max-width: 991px) {
+    .blackbar li {
+        color: #fff;
+    }
+
+    .blackbar li:hover {
+        color: #b1810b;
+    }
+}
+
+.blackbar a {
+    width: 100%;
+}
+
+.blackbar a:link {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-weight: 400;
+    background-color: transparent;
+}
+
+.blackbar a:visited {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-weight: 400;
+    background-color: transparent !important;
+}
+
+.blackbar a:hover {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-weight: 400;
+    background-color: transparent !important;
+}
+
+.blackbar a:active {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-weight: 400;
+    background-color: transparent !important;
+}
+
+.blackbar .navbar-header .navbar-toggle {
+    float: left;
+    border: none;
+    color: #fff;
+}
+
+.blackbar .navbar-header .navbar-toggle .icon-bar {
+    float: left;
+    clear: left;
+    margin-right: 10px;
+    background-color: #fff;
+}
+
+.blackbar .navbar-header .navbar-toggle>.icon-bar:first-child {
+    margin-top: 3px;
+}
+
+.blackbar .navbar-header .navbar-toggle:hover,.blackbar .navbar-header .navbar-toggle:focus {
+    color: #b1810b;
+    background-color: transparent;
+}
+
+.blackbar .navbar-header .navbar-toggle:hover .icon-bar,.blackbar .navbar-header .navbar-toggle:focus .icon-bar {
+    background-color: #b1810b;
+}
+
+@media (min-width: 992px) {
+    .blackbar .navbar-header {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .blackbar .navbar-toggle {
+        display: block;
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    .blackbar .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: none;
+    }
+
+    .blackbar .navbar-collapse.collapse {
+        display: none !important;
+    }
+
+    .blackbar .navbar-header {
+        float: none;
+        display: block;
+    }
+
+    .blackbar .navbar-header .navbar-toggle {
+        display: block;
+    }
+
+    .blackbar .navbar-nav {
+        float: none !important;
+        margin: 0;
+        padding: 10px 0 !important;
+    }
+
+    .blackbar .navbar-nav li {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .blackbar .navbar-nav li a {
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    .blackbar .navbar-nav li .dropdown-menu {
+        position: static;
+        margin-top: -10px;
+        padding: 0 0 10px 12px;
+        font-size: .9em;
+    }
+
+    .blackbar .navbar-nav li .dropdown-menu li a {
+        margin: 5px 0 0;
+        padding: 0;
+    }
+
+    .blackbar .navbar-nav li .dropdown-menu li.dropdown-submenu .dropdown-menu {
+        margin-top: 0;
+        font-size: 1em;
+    }
+
+    .blackbar .navbar-nav li.first a {
+        margin-top: 0;
+    }
+
+    .blackbar .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+
+    .blackbar .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+
+    .blackbar .collapsing {
+        overflow: hidden !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .blackbar .navbar-toggle {
+        padding-left: 15px;
+    }
+}
+
+.blackbar .black {
+    padding-left: 0;
+    max-height: none;
+}
+
+.blackbar .black .nav {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.blackbar .black .nav .first a {
+    padding-left: 0;
+}
+
+.blackbar .black .dropdown-menu {
+    font-size: 1em;
+    background-color: #000;
+}
+
+.blackbar .black .dropdown-menu .dropdown-submenu {
+    position: relative;
+}
+
+.blackbar .black .dropdown-menu .dropdown-submenu>a {
+    float: left;
+}
+
+@media (max-width: 991px) {
+    .blackbar .black .dropdown-menu .dropdown-submenu .dropdown-menu {
+        display: block;
+        padding-left: 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    .blackbar .black .dropdown-menu .dropdown-submenu {
+        min-height: 1.8125em;
+    }
+
+    .blackbar .black .dropdown-menu .dropdown-submenu .caret {
+        display: none;
+    }
+
+    .blackbar .black .dropdown-menu .dropdown-submenu::after {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        content: " ";
+        width: 0;
+        height: 0;
+        border-color: transparent;
+        border-style: solid;
+        border-width: 4px 0 4px 4px;
+        border-left-color: #999;
+        margin-top: 10px;
+        margin-right: 5px;
+    }
+
+    .blackbar .black .dropdown-menu .dropdown-submenu:hover>.dropdown-menu {
+        display: block;
+        left: 100%;
+        top: 0;
+        margin-left: -1px;
+    }
+
+    .blackbar .black .dropdown-menu .dropdown-submenu:hover::after {
+        border-left-color: #fff;
+    }
+}
+
+h1.logotext {
+    font-weight: normal;
+    font-size: 2em;
+    margin-top: 6.2%;
+    color: rgb(255, 255, 255) !important;
+}
+
+h1.logotext a {
+    font-weight: normal;
+    text-decoration: none;
+}
+
+@media (max-width: 1200px){
+  h1.logotext {
+     margin-top: 9.5%;
+ }
+}
+
+.blackbar a:link {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-weight: 400;
+    background-color: transparent;
+}
+
+@media (max-width: 767px) {
+    .blackbar .black {
+        padding-left: 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    .blackbar {
+        font-size: .875em;
+    }
+}
+
+@media (min-width: 767px) and (min-width: 991px) {
+    .blackbar {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 767px) {
+    .blackbar {
+        font-size: .88889em;
+    }
+}
+
+.breadcrumb {
+    width: 100%;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #f5f5f5;
+    color: #444;
+    font-size: .75em;
+}
+
+.breadcrumb a:link {
+    color: inherit;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.breadcrumb a:visited {
+    color: inherit;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    color: inherit;
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+.breadcrumb a:active {
+    color: inherit;
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+.breadcrumb ol {
+    margin: 0;
+}
+
+.breadcrumb li:before {
+    content: "/";
+    display: inline-block;
+    margin: 0 10px 0 5px;
+}
+
+.breadcrumb li:first-child:before {
+    content: none;
+}
+
+.breadcrumb li {
+    display: inline-block;
+    padding: 2px 0;
+}
+
+.collegeContent .grid {
+    margin: 0 -10px;
+}
+
+.collegeContent .grid .tiles .row {
+    height: 100%;
+    margin: -10px;
+}
+
+.collegeContent .grid .tiles .row .tile {
+    padding: 10px;
+}
+
+.collegeContent .grid .tiles .row .tile a {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+.collegeContent .grid .tiles .row .tile a .caption {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+}
+
+.collegeContent .grid .tiles .row .tile.photo a {
+    background-size: cover;
+    background-position: center center;
+}
+
+.collegeContent .grid .tiles .row .tile.photo a .caption .divider {
+    background-color: #fff;
+}
+
+@media (min-width: 768px) {
+    .collegeContent .grid .tiles .row {
+        position: relative;
+    }
+
+    .collegeContent .grid .tiles .row .tile {
+        position: absolute;
+    }
+}
+
+@media (max-width: 767px) {
+    .collegeContent .grid .tiles .row {
+        position: static;
+    }
+
+    .collegeContent .grid .tiles .row .tile {
+        position: relative;
+    }
+}
+
+@media (min-width: 1200px) {
+    .collegeContent {
+        padding: 20px 0 0;
+    }
+
+    .collegeContent .grid {
+        height: 572px;
+    }
+
+    .collegeContent .grid .introContainer {
+        height: 100%;
+    }
+
+    .collegeContent .grid .introContainer .intro {
+        height: 100%;
+    }
+
+    .collegeContent .grid .tiles {
+        height: 100%;
+        padding: 0 10px;
+    }
+
+    .collegeContent .grid .tiles .row .row-lg-1 {
+        height: 25%;
+    }
+
+    .collegeContent .grid .tiles .row .row-lg-2 {
+        height: 50%;
+    }
+
+    .collegeContent .grid .tiles .row .row-lg-3 {
+        height: 75%;
+    }
+
+    .collegeContent .grid .tiles .row .row-lg-4 {
+        height: 100%;
+    }
+
+    .collegeContent .grid .tiles .row .left-lg-a {
+        left: 0;
+    }
+
+    .collegeContent .grid .tiles .row .left-lg-b {
+        left: 25%;
+    }
+
+    .collegeContent .grid .tiles .row .left-lg-c {
+        left: 50%;
+    }
+
+    .collegeContent .grid .tiles .row .left-lg-d {
+        left: 75%;
+    }
+
+    .collegeContent .grid .tiles .row .top-lg-1 {
+        top: 0;
+    }
+
+    .collegeContent .grid .tiles .row .top-lg-2 {
+        top: 25%;
+    }
+
+    .collegeContent .grid .tiles .row .top-lg-3 {
+        top: 50%;
+    }
+
+    .collegeContent .grid .tiles .row .top-lg-4 {
+        top: 75%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .collegeContent {
+        padding: 20px 0 0;
+    }
+
+    .collegeContent .grid {
+        height: 560px;
+    }
+
+    .collegeContent .grid .introContainer {
+        height: 100%;
+    }
+
+    .collegeContent .grid .introContainer .intro {
+        height: 100%;
+    }
+
+    .collegeContent .grid .tiles {
+        height: 100%;
+        padding: 0 10px;
+    }
+
+    .collegeContent .grid .tiles .row .row-md-1 {
+        height: 25%;
+    }
+
+    .collegeContent .grid .tiles .row .row-md-2 {
+        height: 50%;
+    }
+
+    .collegeContent .grid .tiles .row .row-md-3 {
+        height: 75%;
+    }
+
+    .collegeContent .grid .tiles .row .row-md-4 {
+        height: 100%;
+    }
+
+    .collegeContent .grid .tiles .row .left-md-a {
+        left: 0;
+    }
+
+    .collegeContent .grid .tiles .row .left-md-b {
+        left: 25%;
+    }
+
+    .collegeContent .grid .tiles .row .left-md-c {
+        left: 50%;
+    }
+
+    .collegeContent .grid .tiles .row .left-md-d {
+        left: 75%;
+    }
+
+    .collegeContent .grid .tiles .row .top-md-1 {
+        top: 0;
+    }
+
+    .collegeContent .grid .tiles .row .top-md-2 {
+        top: 25%;
+    }
+
+    .collegeContent .grid .tiles .row .top-md-3 {
+        top: 50%;
+    }
+
+    .collegeContent .grid .tiles .row .top-md-4 {
+        top: 75%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .collegeContent {
+        padding: 20px 0 0;
+    }
+
+    .collegeContent .grid .tiles {
+        height: 680px;
+        padding: 20px 10px 0;
+    }
+
+    .collegeContent .grid .tiles .row .row-sm-1 {
+        height: 25%;
+    }
+
+    .collegeContent .grid .tiles .row .row-sm-2 {
+        height: 50%;
+    }
+
+    .collegeContent .grid .tiles .row .row-sm-3 {
+        height: 75%;
+    }
+
+    .collegeContent .grid .tiles .row .row-sm-4 {
+        height: 100%;
+    }
+
+    .collegeContent .grid .tiles .row .left-sm-a {
+        left: 0;
+    }
+
+    .collegeContent .grid .tiles .row .left-sm-b {
+        left: 25%;
+    }
+
+    .collegeContent .grid .tiles .row .left-sm-c {
+        left: 50%;
+    }
+
+    .collegeContent .grid .tiles .row .left-sm-d {
+        left: 75%;
+    }
+
+    .collegeContent .grid .tiles .row .top-sm-1 {
+        top: 0;
+    }
+
+    .collegeContent .grid .tiles .row .top-sm-2 {
+        top: 25%;
+    }
+
+    .collegeContent .grid .tiles .row .top-sm-3 {
+        top: 50%;
+    }
+
+    .collegeContent .grid .tiles .row .top-sm-4 {
+        top: 75%;
+    }
+}
+
+@media (max-width: 767px) {
+    .collegeContent {
+        padding: 20px 0;
+    }
+
+    .collegeContent .grid .tiles {
+        padding: 20px 10px 0;
+    }
+
+    .collegeContent .grid .tiles .row .row-xs-1 {
+        height: 7.22222em;
+    }
+
+    .collegeContent .grid .tiles .row .row-xs-2 {
+        height: 14.44444em;
+    }
+
+    .collegeContent .grid .tiles .row .row-xs-3 {
+        height: 21.66667em;
+    }
+
+    .collegeContent .grid .tiles .row .row-xs-4 {
+        height: 28.88889em;
+    }
+}
+
+.collegeContent .grid .introContainer {
+    padding: 10px;
+}
+
+.collegeContent .grid .introContainer .intro {
+    width: 100%;
+    margin: -10px 0;
+    padding: 30px;
+    background-color: #d8d8d8;
+}
+
+.collegeContent .grid .introContainer .intro h1 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+@media (min-width: 768px) {
+    .collegeContent .grid .introContainer .intro h1 {
+        font-size: 1.75em;
+        line-height: 1.07143em;
+    }
+}
+
+@media (max-width: 767px) {
+    .collegeContent .grid .introContainer .intro h1 {
+        font-size: 1.55556em;
+        line-height: 1.07143em;
+    }
+}
+
+.collegeContent .grid .introContainer .intro a.featureLink {
+    display: block;
+    width: 100%;
+    margin: 15px 0 0;
+    padding: 7px 10px;
+    border: solid 2px #bbb;
+    color: #000;
+}
+
+.collegeContent .grid .introContainer .intro a.featureLink:link {
+    background-color: #d8d8d8;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.collegeContent .grid .introContainer .intro a.featureLink:visited {
+    background-color: #d8d8d8;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.collegeContent .grid .introContainer .intro a.featureLink:hover {
+    background-color: #bbb;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.collegeContent .grid .introContainer .intro a.featureLink:active {
+    background-color: #bbb;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.collegeContent .grid .tiles .row .tile a {
+    font-family: "Open Sans", Arial, sans-serif;
+    color: #fff;
+}
+
+.collegeContent .grid .tiles .row .tile a:link {
+    text-decoration: none;
+    font-weight: 400;
+}
+
+@media (min-width: 1200px) {
+    .collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-1 a.news,.collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-2 a.news,.collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-3 a.news,.collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-4 a.news {
+        background-repeat: repeat;
+        background-image: url(https://purdue.edu/purdue/images/templateElements/2015/stripes-tile.png);
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-1 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-2 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-3 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-4 a.news .caption .divider {
+        background-color: #b1810b;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-1 a.news .caption .fa,.collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-2 a.news .caption .fa,.collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-3 a.news .caption .fa,.collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-4 a.news .caption .fa {
+        color: #b1810b;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-6.row-lg-1 a.news,.collegeContent .grid .tiles .row .tile.col-lg-9.row-lg-1 a.news,.collegeContent .grid .tiles .row .tile.col-lg-12.row-lg-1 a.news {
+        background-color: #b1810b;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-6.row-lg-1 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-lg-9.row-lg-1 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-lg-12.row-lg-1 a.news .caption .divider {
+        background-color: #fff;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-6.row-lg-1 a.news .caption .fa,.collegeContent .grid .tiles .row .tile.col-lg-9.row-lg-1 a.news .caption .fa,.collegeContent .grid .tiles .row .tile.col-lg-12.row-lg-1 a.news .caption .fa {
+        color: #74550c !important;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-1 a.audience,.collegeContent .grid .tiles .row .tile.col-lg-6.row-lg-1 a.audience,.collegeContent .grid .tiles .row .tile.col-lg-9.row-lg-1 a.audience,.collegeContent .grid .tiles .row .tile.col-lg-12.row-lg-1 a.audience,.collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-2 a.audience,.collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-3 a.audience,.collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-4 a.audience {
+        background-repeat: repeat;
+        background-image: url(https://purdue.edu/purdue/images/templateElements/2015/stripes-tile.png);
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-1 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-lg-6.row-lg-1 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-lg-9.row-lg-1 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-lg-12.row-lg-1 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-2 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-3 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-4 a.audience .caption .divider {
+        background-color: #fff;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-1 a.audience .caption .fa,.collegeContent .grid .tiles .row .tile.col-lg-6.row-lg-1 a.audience .caption .fa,.collegeContent .grid .tiles .row .tile.col-lg-9.row-lg-1 a.audience .caption .fa,.collegeContent .grid .tiles .row .tile.col-lg-12.row-lg-1 a.audience .caption .fa,.collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-2 a.audience .caption .fa,.collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-3 a.audience .caption .fa,.collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-4 a.audience .caption .fa {
+        color: #fff;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .collegeContent .grid .tiles .row .tile.col-md-3.row-md-1 a.news,.collegeContent .grid .tiles .row .tile.col-md-3.row-md-2 a.news,.collegeContent .grid .tiles .row .tile.col-md-3.row-md-3 a.news,.collegeContent .grid .tiles .row .tile.col-md-3.row-md-4 a.news {
+        background-repeat: repeat;
+        background-image: url(https://purdue.edu/purdue/images/templateElements/2015/stripes-tile.png);
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-md-3.row-md-1 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-md-3.row-md-2 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-md-3.row-md-3 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-md-3.row-md-4 a.news .caption .divider {
+        background-color: #b1810b;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-md-3.row-md-1 a.news .caption .fa,.collegeContent .grid .tiles .row .tile.col-md-3.row-md-2 a.news .caption .fa,.collegeContent .grid .tiles .row .tile.col-md-3.row-md-3 a.news .caption .fa,.collegeContent .grid .tiles .row .tile.col-md-3.row-md-4 a.news .caption .fa {
+        color: #b1810b;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-md-6.row-md-1 a.news,.collegeContent .grid .tiles .row .tile.col-md-9.row-md-1 a.news,.collegeContent .grid .tiles .row .tile.col-md-12.row-md-1 a.news {
+        background-color: #b1810b;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-md-6.row-md-1 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-md-9.row-md-1 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-md-12.row-md-1 a.news .caption .divider {
+        background-color: #fff;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-md-6.row-md-1 a.news .caption .fa,.collegeContent .grid .tiles .row .tile.col-md-9.row-md-1 a.news .caption .fa,.collegeContent .grid .tiles .row .tile.col-md-12.row-md-1 a.news .caption .fa {
+        color: #74550c !important;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-md-3.row-md-1 a.audience,.collegeContent .grid .tiles .row .tile.col-md-6.row-md-1 a.audience,.collegeContent .grid .tiles .row .tile.col-md-9.row-md-1 a.audience,.collegeContent .grid .tiles .row .tile.col-md-12.row-md-1 a.audience,.collegeContent .grid .tiles .row .tile.col-md-3.row-md-2 a.audience,.collegeContent .grid .tiles .row .tile.col-md-3.row-md-3 a.audience,.collegeContent .grid .tiles .row .tile.col-md-3.row-md-4 a.audience {
+        background-repeat: repeat;
+        background-image: url(https://purdue.edu/purdue/images/templateElements/2015/stripes-tile.png);
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-md-3.row-md-1 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-md-6.row-md-1 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-md-9.row-md-1 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-md-12.row-md-1 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-md-3.row-md-2 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-md-3.row-md-3 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-md-3.row-md-4 a.audience .caption .divider {
+        background-color: #fff;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-md-3.row-md-1 a.audience .caption .fa,.collegeContent .grid .tiles .row .tile.col-md-6.row-md-1 a.audience .caption .fa,.collegeContent .grid .tiles .row .tile.col-md-9.row-md-1 a.audience .caption .fa,.collegeContent .grid .tiles .row .tile.col-md-12.row-md-1 a.audience .caption .fa,.collegeContent .grid .tiles .row .tile.col-md-3.row-md-2 a.audience .caption .fa,.collegeContent .grid .tiles .row .tile.col-md-3.row-md-3 a.audience .caption .fa,.collegeContent .grid .tiles .row .tile.col-md-3.row-md-4 a.audience .caption .fa {
+        color: #fff;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-1 a.news,.collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-2 a.news,.collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-3 a.news,.collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-4 a.news {
+        background-repeat: repeat;
+        background-image: url(https://purdue.edu/purdue/images/templateElements/2015/stripes-tile.png);
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-1 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-2 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-3 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-4 a.news .caption .divider {
+        background-color: #b1810b;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-1 a.news .caption .fa,.collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-2 a.news .caption .fa,.collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-3 a.news .caption .fa,.collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-4 a.news .caption .fa {
+        color: #b1810b;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-sm-6.row-sm-1 a.news,.collegeContent .grid .tiles .row .tile.col-sm-9.row-sm-1 a.news,.collegeContent .grid .tiles .row .tile.col-sm-12.row-sm-1 a.news {
+        background-color: #b1810b;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-sm-6.row-sm-1 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-sm-9.row-sm-1 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-sm-12.row-sm-1 a.news .caption .divider {
+        background-color: #fff;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-sm-6.row-sm-1 a.news .caption .fa,.collegeContent .grid .tiles .row .tile.col-sm-9.row-sm-1 a.news .caption .fa,.collegeContent .grid .tiles .row .tile.col-sm-12.row-sm-1 a.news .caption .fa {
+        color: #74550c !important;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-1 a.audience,.collegeContent .grid .tiles .row .tile.col-sm-6.row-sm-1 a.audience,.collegeContent .grid .tiles .row .tile.col-sm-9.row-sm-1 a.audience,.collegeContent .grid .tiles .row .tile.col-sm-12.row-sm-1 a.audience,.collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-2 a.audience,.collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-3 a.audience,.collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-4 a.audience {
+        background-repeat: repeat;
+        background-image: url(https://purdue.edu/purdue/images/templateElements/2015/stripes-tile.png);
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-1 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-sm-6.row-sm-1 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-sm-9.row-sm-1 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-sm-12.row-sm-1 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-2 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-3 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-4 a.audience .caption .divider {
+        background-color: #fff;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-1 a.audience .caption .fa,.collegeContent .grid .tiles .row .tile.col-sm-6.row-sm-1 a.audience .caption .fa,.collegeContent .grid .tiles .row .tile.col-sm-9.row-sm-1 a.audience .caption .fa,.collegeContent .grid .tiles .row .tile.col-sm-12.row-sm-1 a.audience .caption .fa,.collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-2 a.audience .caption .fa,.collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-3 a.audience .caption .fa,.collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-4 a.audience .caption .fa {
+        color: #fff;
+    }
+}
+
+@media (max-width: 767px) {
+    .collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-1 a.audience,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-1 a.news,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-2 a.audience,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-2 a.news,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-3 a.audience,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-3 a.news,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-4 a.audience,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-4 a.news {
+        background-repeat: repeat;
+        background-image: url(https://purdue.edu/purdue/images/templateElements/2015/stripes-tile.png);
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-1 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-2 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-3 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-4 a.audience .caption .divider {
+        background-color: #fff;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-1 a.audience .caption .fa,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-2 a.audience .caption .fa,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-3 a.audience .caption .fa,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-4 a.audience .caption .fa {
+        color: #fff;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-1 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-2 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-3 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-4 a.news .caption .divider {
+        background-color: #b1810b;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-1 a.news .caption .fa,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-2 a.news .caption .fa,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-3 a.news .caption .fa,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-4 a.news .caption .fa {
+        color: #b1810b;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-xs-12.row-xs-1 a.audience {
+        background-repeat: repeat;
+        background-image: url(https://purdue.edu/purdue/images/templateElements/2015/stripes-tile.png);
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-xs-12.row-xs-1 a.audience .caption .divider {
+        background-color: #fff;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-xs-12.row-xs-1 a.audience .caption .fa {
+        color: #fff;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-xs-12.row-xs-1 a.news {
+        background-color: #b1810b;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-xs-12.row-xs-1 a.news .caption .divider {
+        background-color: #fff;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-xs-12.row-xs-1 a.news .caption .fa {
+        color: #74550c !important;
+    }
+}
+
+.collegeContent .grid .tiles .row a.audience.acceptToday .caption .divider {
+    background-color: #c3be0b !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.acceptToday .caption .fa {
+    color: #c3be0b !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.academics .caption .divider {
+    background-color: #b1810b !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.academics .caption .fa {
+    color: #b1810b !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.admissions .caption .divider {
+    background-color: #b1810b !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.admissions .caption .fa {
+    color: #b1810b !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.alumni .caption .divider {
+    background-color: #b1810b !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.alumni .caption .fa {
+    color: #b1810b !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.applyNow .caption .divider {
+    background-color: #b1810b !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.applyNow .caption .fa {
+    color: #b1810b !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.artsIdeas .caption .divider {
+    background-color: #ff9b1a !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.artsIdeas .caption .fa {
+    color: #ff9b1a !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.athletics .caption .divider {
+    background-color: #baa892 !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.athletics .caption .fa {
+    color: #baa892 !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.careers .caption .divider {
+    background-color: #a3d6d7 !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.careers .caption .fa {
+    color: #a3d6d7 !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.corporatePartners .caption .divider {
+    background-color: #a3d6d7 !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.corporatePartners .caption .fa {
+    color: #a3d6d7 !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.currentStudents .caption .divider {
+    background-color: #2eaf9b !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.currentStudents .caption .fa {
+    color: #2eaf9b !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.events .caption .divider {
+    background-color: #ffd100 !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.events .caption .fa {
+    color: #ffd100 !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.facultyStaff .caption .divider {
+    background-color: #e9e45b !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.facultyStaff .caption .fa {
+    color: #e9e45b !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.giveNow .caption .divider {
+    background-color: #ffd100 !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.giveNow .caption .fa {
+    color: #ffd100 !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.inclusion .caption .divider {
+    background-color: #b1810b !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.inclusion .caption .fa {
+    color: #b1810b !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.news .caption .divider {
+    background-color: #b1810b !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.news .caption .fa {
+    color: #b1810b !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.parentsFamilies .caption .divider {
+    background-color: #849e2a !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.parentsFamilies .caption .fa {
+    color: #849e2a !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.prospectiveStudents .caption .divider {
+    background-color: #b1810b !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.prospectiveStudents .caption .fa {
+    color: #b1810b !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.research .caption .divider {
+    background-color: #7ca6c0 !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.research .caption .fa {
+    color: #7ca6c0 !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.visitCampus .caption .divider {
+    background-color: #ffd100 !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.visitCampus .caption .fa {
+    color: #ffd100 !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.bellTowerBrick .caption .divider {
+    background-color: #c76c14 !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.bellTowerBrick .caption .fa {
+    color: #c76c14 !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.coalGray .caption .divider {
+    background-color: #4d4038 !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.coalGray .caption .fa {
+    color: #4d4038 !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.everTrueBlue .caption .divider {
+    background-color: #5b6870 !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.everTrueBlue .caption .fa {
+    color: #5b6870 !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.landGrantGreen .caption .divider {
+    background-color: #085c11 !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.landGrantGreen .caption .fa {
+    color: #085c11 !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.mackeyOrange .caption .divider {
+    background-color: #ff9b1a !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.mackeyOrange .caption .fa {
+    color: #ff9b1a !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.oakenBucketBrown .caption .divider {
+    background-color: #6b4536 !important;
+}
+
+.collegeContent .grid .tiles .row a.audience.oakenBucketBrown .caption .fa {
+    color: #6b4536 !important;
+}
+
+@media (min-width: 1200px) {
+    .collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-1 a.audience,.collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-1 a.news {
+        font-size: 1.375em;
+        line-height: 1em;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-1 a.audience .caption .fa.icon,.collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-1 a.news .caption .fa.icon {
+        display: block;
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 15px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-1 a.audience .caption .img.icon,.collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-1 a.news .caption .img.icon {
+        display: block;
+        height: 32px;
+        margin-bottom: 15px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-1 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-1 a.news .caption .divider {
+        display: none;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-1 a.audience .caption .icon,.collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-1 a.news .caption .icon {
+        display: block;
+        height: 32px;
+        margin-bottom: 15px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-2 a.audience {
+        font-size: 1.75em;
+        line-height: 1em;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-2 a.audience .caption .fa.icon {
+        display: block;
+        font-size: 38px;
+        line-height: 38px;
+        margin-bottom: 15px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-2 a.audience .caption img.icon {
+        display: block;
+        height: 38px;
+        margin-bottom: 15px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-2 a.audience .caption .divider {
+        display: block;
+        height: 7px;
+        width: 50px;
+        margin-bottom: 15px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-2 a.audience .caption .icon {
+        display: block;
+        height: 38px;
+        margin-bottom: 15px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-2 a.news {
+        font-size: 1.75em;
+        line-height: 1em;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-2 a.news .caption .fa.icon {
+        display: block;
+        font-size: 38px;
+        line-height: 38px;
+        margin-bottom: 15px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-2 a.news .caption img.icon {
+        display: block;
+        height: 38px;
+        margin-bottom: 15px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-2 a.news .caption .divider {
+        display: block;
+        height: 7px;
+        width: 50px;
+        margin-bottom: 15px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-2 a.news .caption .icon {
+        display: none;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-3 a.news,.collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-4 a.news {
+        font-size: 1.75em;
+        line-height: 1em;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-3 a.news .caption .fa.icon,.collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-4 a.news .caption .fa.icon {
+        display: block;
+        font-size: 38px;
+        line-height: 38px;
+        margin-bottom: 15px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-3 a.news .caption img.icon,.collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-4 a.news .caption img.icon {
+        display: block;
+        height: 38px;
+        margin-bottom: 15px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-3 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-4 a.news .caption .divider {
+        display: block;
+        height: 7px;
+        width: 50px;
+        margin-bottom: 15px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-3 a.news .caption .icon,.collegeContent .grid .tiles .row .tile.col-lg-3.row-lg-4 a.news .caption .icon {
+        display: none;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-6.row-lg-1 a.audience,.collegeContent .grid .tiles .row .tile.col-lg-6.row-lg-1 a.news {
+        font-size: 1.75em;
+        line-height: 1em;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-6.row-lg-1 a.audience .caption .icon,.collegeContent .grid .tiles .row .tile.col-lg-6.row-lg-1 a.news .caption .icon {
+        display: none;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-6.row-lg-1 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-lg-6.row-lg-1 a.news .caption .divider {
+        display: block;
+        height: 7px;
+        width: 50px;
+        margin-bottom: 15px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-6.row-lg-1 a.audience .caption .icon,.collegeContent .grid .tiles .row .tile.col-lg-6.row-lg-1 a.news .caption .icon {
+        display: none;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-9.row-lg-1 a.audience,.collegeContent .grid .tiles .row .tile.col-lg-9.row-lg-1 a.news,.collegeContent .grid .tiles .row .tile.col-lg-12.row-lg-1 a.audience,.collegeContent .grid .tiles .row .tile.col-lg-12.row-lg-1 a.news {
+        font-size: 1.75em;
+        line-height: 1em;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-9.row-lg-1 a.audience .caption .fa.icon,.collegeContent .grid .tiles .row .tile.col-lg-9.row-lg-1 a.news .caption .fa.icon,.collegeContent .grid .tiles .row .tile.col-lg-12.row-lg-1 a.audience .caption .fa.icon,.collegeContent .grid .tiles .row .tile.col-lg-12.row-lg-1 a.news .caption .fa.icon {
+        position: absolute;
+        display: block;
+        right: 0;
+        bottom: 0;
+        margin-bottom: 0;
+        font-size: 75px;
+        line-height: 75px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-9.row-lg-1 a.audience .caption img.icon,.collegeContent .grid .tiles .row .tile.col-lg-9.row-lg-1 a.news .caption img.icon,.collegeContent .grid .tiles .row .tile.col-lg-12.row-lg-1 a.audience .caption img.icon,.collegeContent .grid .tiles .row .tile.col-lg-12.row-lg-1 a.news .caption img.icon {
+        position: absolute;
+        display: block;
+        right: 0;
+        bottom: 0;
+        margin-bottom: 0;
+        height: 75px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-9.row-lg-1 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-lg-9.row-lg-1 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-lg-12.row-lg-1 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-lg-12.row-lg-1 a.news .caption .divider {
+        display: block;
+        height: 7px;
+        width: 50px;
+        margin-bottom: 15px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-9.row-lg-1 a.audience .caption .text,.collegeContent .grid .tiles .row .tile.col-lg-9.row-lg-1 a.news .caption .text,.collegeContent .grid .tiles .row .tile.col-lg-12.row-lg-1 a.audience .caption .text,.collegeContent .grid .tiles .row .tile.col-lg-12.row-lg-1 a.news .caption .text {
+        display: block;
+        max-width: 80%;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-9.row-lg-1 a.audience .caption .icon,.collegeContent .grid .tiles .row .tile.col-lg-9.row-lg-1 a.news .caption .icon,.collegeContent .grid .tiles .row .tile.col-lg-12.row-lg-1 a.audience .caption .icon,.collegeContent .grid .tiles .row .tile.col-lg-12.row-lg-1 a.news .caption .icon {
+        position: absolute;
+        display: block;
+        right: 0;
+        bottom: 0;
+        margin-bottom: 0;
+        height: 75px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-6.row-lg-2 a.audience,.collegeContent .grid .tiles .row .tile.col-lg-6.row-lg-3 a.audience,.collegeContent .grid .tiles .row .tile.col-lg-6.row-lg-4 a.audience,.collegeContent .grid .tiles .row .tile.col-lg-9.row-lg-2 a.audience,.collegeContent .grid .tiles .row .tile.col-lg-9.row-lg-3 a.audience,.collegeContent .grid .tiles .row .tile.col-lg-9.row-lg-4 a.audience,.collegeContent .grid .tiles .row .tile.col-lg-12.row-lg-2 a.audience,.collegeContent .grid .tiles .row .tile.col-lg-12.row-lg-3 a.audience,.collegeContent .grid .tiles .row .tile.col-lg-12.row-lg-4 a.audience {
+        background-size: cover;
+        background-position: center center;
+        font-size: 2.375em;
+        line-height: 1em;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-6.row-lg-2 a.audience .caption .icon,.collegeContent .grid .tiles .row .tile.col-lg-6.row-lg-3 a.audience .caption .icon,.collegeContent .grid .tiles .row .tile.col-lg-6.row-lg-4 a.audience .caption .icon,.collegeContent .grid .tiles .row .tile.col-lg-9.row-lg-2 a.audience .caption .icon,.collegeContent .grid .tiles .row .tile.col-lg-9.row-lg-3 a.audience .caption .icon,.collegeContent .grid .tiles .row .tile.col-lg-9.row-lg-4 a.audience .caption .icon,.collegeContent .grid .tiles .row .tile.col-lg-12.row-lg-2 a.audience .caption .icon,.collegeContent .grid .tiles .row .tile.col-lg-12.row-lg-3 a.audience .caption .icon,.collegeContent .grid .tiles .row .tile.col-lg-12.row-lg-4 a.audience .caption .icon {
+        display: none;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-6.row-lg-2 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-lg-6.row-lg-3 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-lg-6.row-lg-4 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-lg-9.row-lg-2 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-lg-9.row-lg-3 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-lg-9.row-lg-4 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-lg-12.row-lg-2 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-lg-12.row-lg-3 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-lg-12.row-lg-4 a.audience .caption .divider {
+        background-color: #fff !important;
+        display: block;
+        margin-bottom: 20px;
+        width: 60px;
+        height: 7px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-6.row-lg-2 a.news,.collegeContent .grid .tiles .row .tile.col-lg-6.row-lg-3 a.news,.collegeContent .grid .tiles .row .tile.col-lg-6.row-lg-4 a.news,.collegeContent .grid .tiles .row .tile.col-lg-9.row-lg-2 a.news,.collegeContent .grid .tiles .row .tile.col-lg-9.row-lg-3 a.news,.collegeContent .grid .tiles .row .tile.col-lg-9.row-lg-4 a.news,.collegeContent .grid .tiles .row .tile.col-lg-12.row-lg-2 a.news,.collegeContent .grid .tiles .row .tile.col-lg-12.row-lg-3 a.news,.collegeContent .grid .tiles .row .tile.col-lg-12.row-lg-4 a.news {
+        background-size: cover;
+        background-position: center center;
+        font-size: 1.625em;
+        line-height: 1.2em;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-6.row-lg-2 a.news .caption,.collegeContent .grid .tiles .row .tile.col-lg-6.row-lg-3 a.news .caption,.collegeContent .grid .tiles .row .tile.col-lg-6.row-lg-4 a.news .caption,.collegeContent .grid .tiles .row .tile.col-lg-9.row-lg-2 a.news .caption,.collegeContent .grid .tiles .row .tile.col-lg-9.row-lg-3 a.news .caption,.collegeContent .grid .tiles .row .tile.col-lg-9.row-lg-4 a.news .caption,.collegeContent .grid .tiles .row .tile.col-lg-12.row-lg-2 a.news .caption,.collegeContent .grid .tiles .row .tile.col-lg-12.row-lg-3 a.news .caption,.collegeContent .grid .tiles .row .tile.col-lg-12.row-lg-4 a.news .caption {
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 20px;
+        background-image: url(https://purdue.edu/purdue/images/templateElements/2015/shader65.png);
+        background-repeat: repeat;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-6.row-lg-2 a.news .caption .icon,.collegeContent .grid .tiles .row .tile.col-lg-6.row-lg-3 a.news .caption .icon,.collegeContent .grid .tiles .row .tile.col-lg-6.row-lg-4 a.news .caption .icon,.collegeContent .grid .tiles .row .tile.col-lg-9.row-lg-2 a.news .caption .icon,.collegeContent .grid .tiles .row .tile.col-lg-9.row-lg-3 a.news .caption .icon,.collegeContent .grid .tiles .row .tile.col-lg-9.row-lg-4 a.news .caption .icon,.collegeContent .grid .tiles .row .tile.col-lg-12.row-lg-2 a.news .caption .icon,.collegeContent .grid .tiles .row .tile.col-lg-12.row-lg-3 a.news .caption .icon,.collegeContent .grid .tiles .row .tile.col-lg-12.row-lg-4 a.news .caption .icon {
+        display: none;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-lg-6.row-lg-2 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-lg-6.row-lg-3 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-lg-6.row-lg-4 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-lg-9.row-lg-2 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-lg-9.row-lg-3 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-lg-9.row-lg-4 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-lg-12.row-lg-2 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-lg-12.row-lg-3 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-lg-12.row-lg-4 a.news .caption .divider {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .collegeContent .grid .tiles .row .tile.col-md-3.row-md-1 a.audience,.collegeContent .grid .tiles .row .tile.col-md-3.row-md-1 a.news {
+        font-size: 1.125em;
+        line-height: 1em;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-md-3.row-md-1 a.audience .caption .fa.icon,.collegeContent .grid .tiles .row .tile.col-md-3.row-md-1 a.news .caption .fa.icon {
+        display: block;
+        font-size: 28px;
+        line-height: 28px;
+        margin-bottom: 8px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-md-3.row-md-1 a.audience .caption img.icon,.collegeContent .grid .tiles .row .tile.col-md-3.row-md-1 a.news .caption img.icon {
+        display: block;
+        height: 28px;
+        margin-bottom: 8px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-md-3.row-md-1 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-md-3.row-md-1 a.news .caption .divider {
+        display: none;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-md-3.row-md-2 a.audience,.collegeContent .grid .tiles .row .tile.col-md-3.row-md-3 a.audience,.collegeContent .grid .tiles .row .tile.col-md-3.row-md-4 a.audience {
+        font-size: 1.5em;
+        line-height: 1em;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-md-3.row-md-2 a.audience .caption .fa.icon,.collegeContent .grid .tiles .row .tile.col-md-3.row-md-3 a.audience .caption .fa.icon,.collegeContent .grid .tiles .row .tile.col-md-3.row-md-4 a.audience .caption .fa.icon {
+        display: block;
+        font-size: 34px;
+        line-height: 34px;
+        margin-bottom: 8px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-md-3.row-md-2 a.audience .caption img.icon,.collegeContent .grid .tiles .row .tile.col-md-3.row-md-3 a.audience .caption img.icon,.collegeContent .grid .tiles .row .tile.col-md-3.row-md-4 a.audience .caption img.icon {
+        display: block;
+        height: 34px;
+        margin-bottom: 8px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-md-3.row-md-2 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-md-3.row-md-3 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-md-3.row-md-4 a.audience .caption .divider {
+        display: block;
+        height: 6px;
+        width: 44px;
+        margin-bottom: 8px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-md-3.row-md-2 a.news,.collegeContent .grid .tiles .row .tile.col-md-3.row-md-3 a.news,.collegeContent .grid .tiles .row .tile.col-md-3.row-md-4 a.news {
+        font-size: 1.5em;
+        line-height: 1em;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-md-3.row-md-2 a.news .caption .fa.icon,.collegeContent .grid .tiles .row .tile.col-md-3.row-md-3 a.news .caption .fa.icon,.collegeContent .grid .tiles .row .tile.col-md-3.row-md-4 a.news .caption .fa.icon {
+        display: block;
+        font-size: 34px;
+        line-height: 34px;
+        margin-bottom: 8px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-md-3.row-md-2 a.news .caption img.icon,.collegeContent .grid .tiles .row .tile.col-md-3.row-md-3 a.news .caption img.icon,.collegeContent .grid .tiles .row .tile.col-md-3.row-md-4 a.news .caption img.icon {
+        display: block;
+        height: 34px;
+        margin-bottom: 8px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-md-3.row-md-2 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-md-3.row-md-3 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-md-3.row-md-4 a.news .caption .divider {
+        display: block;
+        height: 6px;
+        width: 44px;
+        margin-bottom: 8px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-md-6.row-md-1 a.audience,.collegeContent .grid .tiles .row .tile.col-md-6.row-md-1 a.news {
+        font-size: 1.5em;
+        line-height: 1em;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-md-6.row-md-1 a.audience .caption .icon,.collegeContent .grid .tiles .row .tile.col-md-6.row-md-1 a.news .caption .icon {
+        display: none;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-md-6.row-md-1 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-md-6.row-md-1 a.news .caption .divider {
+        display: block;
+        height: 7px;
+        width: 44px;
+        margin-bottom: 8px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-md-9.row-md-1 a.audience,.collegeContent .grid .tiles .row .tile.col-md-9.row-md-1 a.news,.collegeContent .grid .tiles .row .tile.col-md-12.row-md-1 a.audience,.collegeContent .grid .tiles .row .tile.col-md-12.row-md-1 a.news {
+        font-size: 1.75em;
+        line-height: 1em;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-md-9.row-md-1 a.audience .caption .fa.icon,.collegeContent .grid .tiles .row .tile.col-md-9.row-md-1 a.news .caption .fa.icon,.collegeContent .grid .tiles .row .tile.col-md-12.row-md-1 a.audience .caption .fa.icon,.collegeContent .grid .tiles .row .tile.col-md-12.row-md-1 a.news .caption .fa.icon {
+        position: absolute;
+        display: block;
+        right: 0;
+        bottom: 0;
+        margin-bottom: 0;
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-md-9.row-md-1 a.audience .caption img.icon,.collegeContent .grid .tiles .row .tile.col-md-9.row-md-1 a.news .caption img.icon,.collegeContent .grid .tiles .row .tile.col-md-12.row-md-1 a.audience .caption img.icon,.collegeContent .grid .tiles .row .tile.col-md-12.row-md-1 a.news .caption img.icon {
+        position: absolute;
+        display: block;
+        right: 0;
+        bottom: 0;
+        margin-bottom: 0;
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-md-9.row-md-1 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-md-9.row-md-1 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-md-12.row-md-1 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-md-12.row-md-1 a.news .caption .divider {
+        display: block;
+        height: 7px;
+        width: 45px;
+        margin-bottom: 8px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-md-9.row-md-1 a.audience .caption .text,.collegeContent .grid .tiles .row .tile.col-md-9.row-md-1 a.news .caption .text,.collegeContent .grid .tiles .row .tile.col-md-12.row-md-1 a.audience .caption .text,.collegeContent .grid .tiles .row .tile.col-md-12.row-md-1 a.news .caption .text {
+        display: block;
+        max-width: 80%;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-md-6.row-md-2 a.audience,.collegeContent .grid .tiles .row .tile.col-md-6.row-md-3 a.audience,.collegeContent .grid .tiles .row .tile.col-md-6.row-md-4 a.audience,.collegeContent .grid .tiles .row .tile.col-md-9.row-md-2 a.audience,.collegeContent .grid .tiles .row .tile.col-md-9.row-md-3 a.audience,.collegeContent .grid .tiles .row .tile.col-md-9.row-md-4 a.audience,.collegeContent .grid .tiles .row .tile.col-md-12.row-md-2 a.audience,.collegeContent .grid .tiles .row .tile.col-md-12.row-md-3 a.audience,.collegeContent .grid .tiles .row .tile.col-md-12.row-md-4 a.audience {
+        background-size: cover;
+        background-position: center center;
+        font-size: 2.125em;
+        line-height: 1em;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-md-6.row-md-2 a.audience .caption .icon,.collegeContent .grid .tiles .row .tile.col-md-6.row-md-3 a.audience .caption .icon,.collegeContent .grid .tiles .row .tile.col-md-6.row-md-4 a.audience .caption .icon,.collegeContent .grid .tiles .row .tile.col-md-9.row-md-2 a.audience .caption .icon,.collegeContent .grid .tiles .row .tile.col-md-9.row-md-3 a.audience .caption .icon,.collegeContent .grid .tiles .row .tile.col-md-9.row-md-4 a.audience .caption .icon,.collegeContent .grid .tiles .row .tile.col-md-12.row-md-2 a.audience .caption .icon,.collegeContent .grid .tiles .row .tile.col-md-12.row-md-3 a.audience .caption .icon,.collegeContent .grid .tiles .row .tile.col-md-12.row-md-4 a.audience .caption .icon {
+        display: none;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-md-6.row-md-2 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-md-6.row-md-3 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-md-6.row-md-4 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-md-9.row-md-2 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-md-9.row-md-3 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-md-9.row-md-4 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-md-12.row-md-2 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-md-12.row-md-3 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-md-12.row-md-4 a.audience .caption .divider {
+        background-color: #fff !important;
+        display: block;
+        margin-bottom: 15px;
+        width: 50px;
+        height: 6px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-md-6.row-md-2 a.news,.collegeContent .grid .tiles .row .tile.col-md-6.row-md-3 a.news,.collegeContent .grid .tiles .row .tile.col-md-6.row-md-4 a.news,.collegeContent .grid .tiles .row .tile.col-md-9.row-md-2 a.news,.collegeContent .grid .tiles .row .tile.col-md-9.row-md-3 a.news,.collegeContent .grid .tiles .row .tile.col-md-9.row-md-4 a.news,.collegeContent .grid .tiles .row .tile.col-md-12.row-md-2 a.news,.collegeContent .grid .tiles .row .tile.col-md-12.row-md-3 a.news,.collegeContent .grid .tiles .row .tile.col-md-12.row-md-4 a.news {
+        background-size: cover;
+        background-position: center center;
+        font-size: 1.375em;
+        line-height: 1.2em;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-md-6.row-md-2 a.news .caption,.collegeContent .grid .tiles .row .tile.col-md-6.row-md-3 a.news .caption,.collegeContent .grid .tiles .row .tile.col-md-6.row-md-4 a.news .caption,.collegeContent .grid .tiles .row .tile.col-md-9.row-md-2 a.news .caption,.collegeContent .grid .tiles .row .tile.col-md-9.row-md-3 a.news .caption,.collegeContent .grid .tiles .row .tile.col-md-9.row-md-4 a.news .caption,.collegeContent .grid .tiles .row .tile.col-md-12.row-md-2 a.news .caption,.collegeContent .grid .tiles .row .tile.col-md-12.row-md-3 a.news .caption,.collegeContent .grid .tiles .row .tile.col-md-12.row-md-4 a.news .caption {
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 20px;
+        background-image: url(https://purdue.edu/purdue/images/templateElements/2015/shader65.png);
+        background-repeat: repeat;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-md-6.row-md-2 a.news .caption .icon,.collegeContent .grid .tiles .row .tile.col-md-6.row-md-3 a.news .caption .icon,.collegeContent .grid .tiles .row .tile.col-md-6.row-md-4 a.news .caption .icon,.collegeContent .grid .tiles .row .tile.col-md-9.row-md-2 a.news .caption .icon,.collegeContent .grid .tiles .row .tile.col-md-9.row-md-3 a.news .caption .icon,.collegeContent .grid .tiles .row .tile.col-md-9.row-md-4 a.news .caption .icon,.collegeContent .grid .tiles .row .tile.col-md-12.row-md-2 a.news .caption .icon,.collegeContent .grid .tiles .row .tile.col-md-12.row-md-3 a.news .caption .icon,.collegeContent .grid .tiles .row .tile.col-md-12.row-md-4 a.news .caption .icon {
+        display: none;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-md-6.row-md-2 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-md-6.row-md-3 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-md-6.row-md-4 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-md-9.row-md-2 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-md-9.row-md-3 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-md-9.row-md-4 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-md-12.row-md-2 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-md-12.row-md-3 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-md-12.row-md-4 a.news .caption .divider {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-1 a.audience,.collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-1 a.news {
+        font-size: 1.375em;
+        line-height: 1em;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-1 a.audience .caption .fa.icon,.collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-1 a.news .caption .fa.icon {
+        display: block;
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 15px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-1 a.audience .caption img.icon,.collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-1 a.news .caption img.icon {
+        display: block;
+        height: 32px;
+        margin-bottom: 15px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-1 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-1 a.news .caption .divider {
+        display: none;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-2 a.audience,.collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-3 a.audience,.collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-4 a.audience {
+        font-size: 1.75em;
+        line-height: 1em;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-2 a.audience .caption .fa.icon,.collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-3 a.audience .caption .fa.icon,.collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-4 a.audience .caption .fa.icon {
+        display: block;
+        font-size: 38px;
+        line-height: 38px;
+        margin-bottom: 15px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-2 a.audience .caption img.icon,.collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-3 a.audience .caption img.icon,.collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-4 a.audience .caption img.icon {
+        display: block;
+        height: 38px;
+        margin-bottom: 15px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-2 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-3 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-4 a.audience .caption .divider {
+        display: block;
+        height: 7px;
+        width: 50px;
+        margin-bottom: 15px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-2 a.news,.collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-3 a.news,.collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-4 a.news {
+        font-size: 1.75em;
+        line-height: 1em;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-2 a.news .caption .fa.icon,.collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-3 a.news .caption .fa.icon,.collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-4 a.news .caption .fa.icon {
+        display: block;
+        font-size: 38px;
+        line-height: 38px;
+        margin-bottom: 15px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-2 a.news .caption img.icon,.collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-3 a.news .caption img.icon,.collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-4 a.news .caption img.icon {
+        display: block;
+        height: 38px;
+        margin-bottom: 15px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-2 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-3 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-sm-3.row-sm-4 a.news .caption .divider {
+        display: block;
+        height: 7px;
+        width: 50px;
+        margin-bottom: 15px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-sm-6.row-sm-1 a.audience,.collegeContent .grid .tiles .row .tile.col-sm-6.row-sm-1 a.news {
+        font-size: 1.75em;
+        line-height: 1em;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-sm-6.row-sm-1 a.audience .caption .icon,.collegeContent .grid .tiles .row .tile.col-sm-6.row-sm-1 a.news .caption .icon {
+        display: none;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-sm-6.row-sm-1 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-sm-6.row-sm-1 a.news .caption .divider {
+        display: block;
+        height: 7px;
+        width: 50px;
+        margin-bottom: 15px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-sm-9.row-sm-1 a.audience,.collegeContent .grid .tiles .row .tile.col-sm-9.row-sm-1 a.news,.collegeContent .grid .tiles .row .tile.col-sm-12.row-sm-1 a.audience,.collegeContent .grid .tiles .row .tile.col-sm-12.row-sm-1 a.news {
+        font-size: 1.75em;
+        line-height: 1em;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-sm-9.row-sm-1 a.audience .caption .fa.icon,.collegeContent .grid .tiles .row .tile.col-sm-9.row-sm-1 a.news .caption .fa.icon,.collegeContent .grid .tiles .row .tile.col-sm-12.row-sm-1 a.audience .caption .fa.icon,.collegeContent .grid .tiles .row .tile.col-sm-12.row-sm-1 a.news .caption .fa.icon {
+        position: absolute;
+        display: block;
+        right: 0;
+        bottom: 0;
+        margin-bottom: 0;
+        font-size: 75px;
+        line-height: 75px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-sm-9.row-sm-1 a.audience .caption img.icon,.collegeContent .grid .tiles .row .tile.col-sm-9.row-sm-1 a.news .caption img.icon,.collegeContent .grid .tiles .row .tile.col-sm-12.row-sm-1 a.audience .caption img.icon,.collegeContent .grid .tiles .row .tile.col-sm-12.row-sm-1 a.news .caption img.icon {
+        position: absolute;
+        display: block;
+        right: 0;
+        bottom: 0;
+        margin-bottom: 0;
+        height: 75px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-sm-9.row-sm-1 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-sm-9.row-sm-1 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-sm-12.row-sm-1 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-sm-12.row-sm-1 a.news .caption .divider {
+        display: block;
+        height: 7px;
+        width: 50px;
+        margin-bottom: 15px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-sm-9.row-sm-1 a.audience .caption .text,.collegeContent .grid .tiles .row .tile.col-sm-9.row-sm-1 a.news .caption .text,.collegeContent .grid .tiles .row .tile.col-sm-12.row-sm-1 a.audience .caption .text,.collegeContent .grid .tiles .row .tile.col-sm-12.row-sm-1 a.news .caption .text {
+        display: block;
+        max-width: 80%;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-sm-6.row-sm-2 a.audience,.collegeContent .grid .tiles .row .tile.col-sm-6.row-sm-3 a.audience,.collegeContent .grid .tiles .row .tile.col-sm-6.row-sm-4 a.audience,.collegeContent .grid .tiles .row .tile.col-sm-9.row-sm-2 a.audience,.collegeContent .grid .tiles .row .tile.col-sm-9.row-sm-3 a.audience,.collegeContent .grid .tiles .row .tile.col-sm-9.row-sm-4 a.audience,.collegeContent .grid .tiles .row .tile.col-sm-12.row-sm-2 a.audience,.collegeContent .grid .tiles .row .tile.col-sm-12.row-sm-3 a.audience,.collegeContent .grid .tiles .row .tile.col-sm-12.row-sm-4 a.audience {
+        background-size: cover;
+        background-position: center center;
+        font-size: 2.375em;
+        line-height: 1em;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-sm-6.row-sm-2 a.audience .caption .icon,.collegeContent .grid .tiles .row .tile.col-sm-6.row-sm-3 a.audience .caption .icon,.collegeContent .grid .tiles .row .tile.col-sm-6.row-sm-4 a.audience .caption .icon,.collegeContent .grid .tiles .row .tile.col-sm-9.row-sm-2 a.audience .caption .icon,.collegeContent .grid .tiles .row .tile.col-sm-9.row-sm-3 a.audience .caption .icon,.collegeContent .grid .tiles .row .tile.col-sm-9.row-sm-4 a.audience .caption .icon,.collegeContent .grid .tiles .row .tile.col-sm-12.row-sm-2 a.audience .caption .icon,.collegeContent .grid .tiles .row .tile.col-sm-12.row-sm-3 a.audience .caption .icon,.collegeContent .grid .tiles .row .tile.col-sm-12.row-sm-4 a.audience .caption .icon {
+        display: none;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-sm-6.row-sm-2 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-sm-6.row-sm-3 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-sm-6.row-sm-4 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-sm-9.row-sm-2 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-sm-9.row-sm-3 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-sm-9.row-sm-4 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-sm-12.row-sm-2 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-sm-12.row-sm-3 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-sm-12.row-sm-4 a.audience .caption .divider {
+        background-color: #fff !important;
+        display: block;
+        margin-bottom: 20px;
+        width: 60px;
+        height: 7px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-sm-6.row-sm-2 a.news,.collegeContent .grid .tiles .row .tile.col-sm-6.row-sm-3 a.news,.collegeContent .grid .tiles .row .tile.col-sm-6.row-sm-4 a.news,.collegeContent .grid .tiles .row .tile.col-sm-9.row-sm-2 a.news,.collegeContent .grid .tiles .row .tile.col-sm-9.row-sm-3 a.news,.collegeContent .grid .tiles .row .tile.col-sm-9.row-sm-4 a.news,.collegeContent .grid .tiles .row .tile.col-sm-12.row-sm-2 a.news,.collegeContent .grid .tiles .row .tile.col-sm-12.row-sm-3 a.news,.collegeContent .grid .tiles .row .tile.col-sm-12.row-sm-4 a.news {
+        background-size: cover;
+        background-position: center center;
+        font-size: 1.625em;
+        line-height: 1.2em;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-sm-6.row-sm-2 a.news .caption,.collegeContent .grid .tiles .row .tile.col-sm-6.row-sm-3 a.news .caption,.collegeContent .grid .tiles .row .tile.col-sm-6.row-sm-4 a.news .caption,.collegeContent .grid .tiles .row .tile.col-sm-9.row-sm-2 a.news .caption,.collegeContent .grid .tiles .row .tile.col-sm-9.row-sm-3 a.news .caption,.collegeContent .grid .tiles .row .tile.col-sm-9.row-sm-4 a.news .caption,.collegeContent .grid .tiles .row .tile.col-sm-12.row-sm-2 a.news .caption,.collegeContent .grid .tiles .row .tile.col-sm-12.row-sm-3 a.news .caption,.collegeContent .grid .tiles .row .tile.col-sm-12.row-sm-4 a.news .caption {
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 20px;
+        background-image: url(http://purdue.edu/purdue/images/templateElements/2015/shader65.png);
+        background-repeat: repeat;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-sm-6.row-sm-2 a.news .caption .icon,.collegeContent .grid .tiles .row .tile.col-sm-6.row-sm-3 a.news .caption .icon,.collegeContent .grid .tiles .row .tile.col-sm-6.row-sm-4 a.news .caption .icon,.collegeContent .grid .tiles .row .tile.col-sm-9.row-sm-2 a.news .caption .icon,.collegeContent .grid .tiles .row .tile.col-sm-9.row-sm-3 a.news .caption .icon,.collegeContent .grid .tiles .row .tile.col-sm-9.row-sm-4 a.news .caption .icon,.collegeContent .grid .tiles .row .tile.col-sm-12.row-sm-2 a.news .caption .icon,.collegeContent .grid .tiles .row .tile.col-sm-12.row-sm-3 a.news .caption .icon,.collegeContent .grid .tiles .row .tile.col-sm-12.row-sm-4 a.news .caption .icon {
+        display: none;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-sm-6.row-sm-2 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-sm-6.row-sm-3 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-sm-6.row-sm-4 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-sm-9.row-sm-2 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-sm-9.row-sm-3 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-sm-9.row-sm-4 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-sm-12.row-sm-2 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-sm-12.row-sm-3 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-sm-12.row-sm-4 a.news .caption .divider {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-1 a.audience,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-1 a.news {
+        font-size: 1.125em;
+        line-height: 1em;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-1 a.audience .caption .fa.icon,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-1 a.news .caption .fa.icon {
+        display: block;
+        font-size: 28px;
+        line-height: 28px;
+        margin-bottom: 6px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-1 a.audience .caption img.icon,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-1 a.news .caption img.icon {
+        display: block;
+        height: 28px;
+        margin-bottom: 6px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-1 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-1 a.news .caption .divider {
+        display: none;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-1 a.audience .caption .icon,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-1 a.news .caption .icon {
+        display: block;
+        height: 28px;
+        margin-bottom: 6px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-2 a.audience,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-3 a.audience,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-4 a.audience {
+        font-size: 1.5em;
+        line-height: 1em;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-2 a.audience .caption .fa.icon,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-3 a.audience .caption .fa.icon,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-4 a.audience .caption .fa.icon {
+        display: block;
+        font-size: 34px;
+        line-height: 34px;
+        margin-bottom: 12px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-2 a.audience .caption img.icon,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-3 a.audience .caption img.icon,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-4 a.audience .caption img.icon {
+        display: block;
+        height: 34px;
+        margin-bottom: 12px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-2 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-3 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-4 a.audience .caption .divider {
+        display: block;
+        height: 6px;
+        width: 44px;
+        margin-bottom: 12px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-2 a.audience .caption .icon,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-3 a.audience .caption .icon,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-4 a.audience .caption .icon {
+        display: block;
+        height: 34px;
+        margin-bottom: 12px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-2 a.news,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-3 a.news,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-4 a.news {
+        font-size: 1.5em;
+        line-height: 1em;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-2 a.news .caption .fa.icon,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-3 a.news .caption .fa.icon,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-4 a.news .caption .fa.icon {
+        display: block;
+        font-size: 34px;
+        line-height: 34px;
+        margin-bottom: 12px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-2 a.news .caption img.icon,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-3 a.news .caption img.icon,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-4 a.news .caption img.icon {
+        display: block;
+        height: 34px;
+        margin-bottom: 12px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-2 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-3 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-4 a.news .caption .divider {
+        display: block;
+        height: 6px;
+        width: 44px;
+        margin-bottom: 12px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-2 a.news .caption .icon,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-3 a.news .caption .icon,.collegeContent .grid .tiles .row .tile.col-xs-6.row-xs-4 a.news .caption .icon {
+        display: none;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-xs-12.row-xs-1 a.audience,.collegeContent .grid .tiles .row .tile.col-xs-12.row-xs-1 a.news {
+        font-size: 1.25em;
+        line-height: 1em;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-xs-12.row-xs-1 a.audience .caption .icon,.collegeContent .grid .tiles .row .tile.col-xs-12.row-xs-1 a.news .caption .icon {
+        display: none;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-xs-12.row-xs-1 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-xs-12.row-xs-1 a.news .caption .divider {
+        display: block;
+        height: 7px;
+        width: 50px;
+        margin-bottom: 8px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-xs-12.row-xs-1 a.audience .caption .icon,.collegeContent .grid .tiles .row .tile.col-xs-12.row-xs-1 a.news .caption .icon {
+        display: none;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-xs-12.row-xs-2 a.audience,.collegeContent .grid .tiles .row .tile.col-xs-12.row-xs-3 a.audience,.collegeContent .grid .tiles .row .tile.col-xs-12.row-xs-4 a.audience {
+        background-size: cover;
+        background-position: center center;
+        font-size: 2.125em;
+        line-height: 1em;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-xs-12.row-xs-2 a.audience .caption .icon,.collegeContent .grid .tiles .row .tile.col-xs-12.row-xs-3 a.audience .caption .icon,.collegeContent .grid .tiles .row .tile.col-xs-12.row-xs-4 a.audience .caption .icon {
+        display: none;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-xs-12.row-xs-2 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-xs-12.row-xs-3 a.audience .caption .divider,.collegeContent .grid .tiles .row .tile.col-xs-12.row-xs-4 a.audience .caption .divider {
+        background-color: #fff !important;
+        display: block;
+        margin-bottom: 15px;
+        width: 50px;
+        height: 6px;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-xs-12.row-xs-2 a.news,.collegeContent .grid .tiles .row .tile.col-xs-12.row-xs-3 a.news,.collegeContent .grid .tiles .row .tile.col-xs-12.row-xs-4 a.news {
+        background-size: cover;
+        background-position: center center;
+        font-size: 1.375em;
+        line-height: 1.2em;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-xs-12.row-xs-2 a.news .caption,.collegeContent .grid .tiles .row .tile.col-xs-12.row-xs-3 a.news .caption,.collegeContent .grid .tiles .row .tile.col-xs-12.row-xs-4 a.news .caption {
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 20px;
+        background-image: url(https://purdue.edu/purdue/images/templateElements/2015/shader65.png);
+        background-repeat: repeat;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-xs-12.row-xs-2 a.news .caption .icon,.collegeContent .grid .tiles .row .tile.col-xs-12.row-xs-3 a.news .caption .icon,.collegeContent .grid .tiles .row .tile.col-xs-12.row-xs-4 a.news .caption .icon {
+        display: none;
+    }
+
+    .collegeContent .grid .tiles .row .tile.col-xs-12.row-xs-2 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-xs-12.row-xs-3 a.news .caption .divider,.collegeContent .grid .tiles .row .tile.col-xs-12.row-xs-4 a.news .caption .divider {
+        display: none;
+    }
+}
+
+.footer {
+    width: 100%;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.footer #accordion .panel {
+    border: none;
+    margin-top: 5px;
+    background-color: transparent;
+}
+
+.footer #accordion .panel a {
+    display: inline-block;
+    width: 100%;
+}
+
+.footer #accordion .panel a:link {
+    color: #adadad;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.footer #accordion .panel a:visited {
+    color: #adadad;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.footer #accordion .panel a:hover {
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.footer #accordion .panel a:active {
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.footer #accordion .panel .panel-collapse .panel-body {
+    border: none;
+    padding: 0;
+}
+
+.footer #accordion .panel .panel-collapse .panel-body ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer #accordion .motto {
+    text-align: left;
+}
+
+.footer #accordion .motto a {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    margin: 2.5px 2%;
+    text-align: center;
+}
+
+.footer #accordion .motto a .text-hidden {
+    position: absolute;
+    display: block;
+    top: -1000px;
+    left: -1000px;
+}
+
+.footer #accordion .motto a:link {
+    color: #999;
+    text-decoration: none;
+}
+
+.footer #accordion .motto a:visited {
+    color: #999;
+    text-decoration: none;
+}
+
+.footer #accordion .motto a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer #accordion .motto a:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer #accordion .motto img {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.footer #accordion .motto a i {
+    width: 23px;
+}
+
+@media (min-width: 1200px) {
+    .footer #accordion .panel {
+        float: left;
+        width: 20%;
+        padding: 0 15px;
+        border: none;
+        font-size: .875em;
+        line-height: 1.42857em;
+    }
+
+    .footer #accordion .panel a {
+        padding: 8px 0 2px;
+        border-bottom: solid 1px #474747;
+    }
+
+    .footer #accordion .panel .panel-heading {
+        display: none;
+    }
+
+    .footer #accordion .panel .panel-collapse {
+        display: block;
+        height: auto !important;
+    }
+
+    .footer #accordion .motto {
+        float: left;
+        width: 20%;
+        padding: 15px;
+        font-size: 1.25em;
+    }
+
+    .footer #accordion .motto a {
+        float: left;
+    }
+
+    .footer #accordion .motto img {
+        padding-bottom: 10px;
+        border-bottom: solid 1px #474747;
+    }
+
+    .footer #accordion .motto .horizontal {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .footer #accordion .panel {
+        float: left;
+        width: 20%;
+        padding: 0 15px;
+        border: none;
+        font-size: .875em;
+        line-height: 1.66667em;
+    }
+
+    .footer #accordion .panel a {
+        padding: 8px 0 2px;
+        border-bottom: solid 1px #474747;
+    }
+
+    .footer #accordion .panel .panel-heading {
+        display: none;
+    }
+
+    .footer #accordion .panel .panel-collapse {
+        display: block;
+        height: auto !important;
+    }
+
+    .footer #accordion .motto {
+        float: left;
+        width: 20%;
+        padding: 15px;
+        font-size: 1.25em;
+    }
+
+    .footer #accordion .motto a {
+        float: left;
+    }
+
+    .footer #accordion .motto img {
+        padding-bottom: 10px;
+        border-bottom: solid 1px #474747;
+    }
+
+    .footer #accordion .motto .horizontal {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .footer #accordion {
+        margin: 0 -30px;
+        padding: 15px 0 0;
+    }
+
+    .footer #accordion .panel {
+        float: left;
+        width: 50%;
+        padding: 0 30px 15px;
+        border: none;
+        font-size: .875em;
+        line-height: 1.66667em;
+    }
+
+    .footer #accordion .panel .panel-heading {
+        display: block;
+        padding: 0;
+        background-color: transparent;
+        font-size: 1.28571em;
+        line-height: 1em;
+    }
+
+    .footer #accordion .panel .panel-heading .panel-title {
+        font-family: Arial,"Helvetica Neue",Helvetica,sans-serif !important;
+        padding-top: 0;
+        font-size: 1em;
+        font-weight: 300;
+    }
+
+    .footer #accordion .panel .panel-heading .panel-title a {
+        cursor: default;
+        color: #b1810b;
+    }
+
+    .footer #accordion .panel .panel-heading .panel-title .fa {
+        display: none;
+    }
+
+    .footer #accordion .panel a {
+        padding: 8px 0 2px;
+        border-bottom: solid 1px #474747;
+    }
+
+    .footer #accordion .panel .panel-collapse {
+        display: block;
+        height: auto !important;
+    }
+
+    .footer #accordion .motto {
+        float: left;
+        width: 100%;
+        padding: 15px 30px;
+        font-size: 1.75em;
+        text-align: center;
+    }
+
+    .footer #accordion .motto img {
+        display: block;
+        max-width: 60%;
+        margin: 0 auto 15px;
+    }
+
+    .footer #accordion .motto a {
+        margin: 1px 5px;
+    }
+
+    .footer #accordion .motto .vertical {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer #accordion .panel {
+        margin-top: 0;
+        padding: 15px;
+        border-bottom: solid 1px #333;
+        font-size: .77778em;
+        line-height: 2.28571em;
+    }
+
+    .footer #accordion .panel .panel-heading {
+        display: block;
+        padding: 0;
+        background-color: transparent;
+        font-size: 1.28571em;
+        line-height: 1em;
+    }
+
+    .footer #accordion .panel .panel-heading .panel-title {
+        font-family: Arial,"Helvetica Neue",Helvetica,sans-serif !important;
+        padding-top: 0;
+        font-size: 1em;
+        font-weight: 300;
+    }
+
+    .footer #accordion .panel .panel-heading a {
+        display: block;
+        width: 100%;
+    }
+
+    .footer #accordion .panel .panel-heading a .fa-plus {
+        display: none;
+    }
+
+    .footer #accordion .panel .panel-heading a .fa-minus {
+        display: block;
+    }
+
+    .footer #accordion .panel .panel-heading a.collapsed .fa-plus {
+        display: block;
+    }
+
+    .footer #accordion .panel .panel-heading a.collapsed .fa-minus {
+        display: none;
+    }
+
+    .footer #accordion .panel .panel-heading a:link {
+        color: #b1810b;
+        text-decoration: none;
+    }
+
+    .footer #accordion .panel .panel-heading a:visited {
+        color: #b1810b;
+        text-decoration: none;
+    }
+
+    .footer #accordion .panel .panel-heading a:hover {
+        color: #b1810b;
+        text-decoration: none;
+    }
+
+    .footer #accordion .panel .panel-heading a:active {
+        color: #b1810b;
+        text-decoration: none;
+    }
+
+    .footer #accordion .panel .panel-collapse {
+        padding-left: 15px;
+    }
+
+    .footer #accordion .panel .panel-collapse a {
+        padding: 0;
+    }
+
+    .footer #accordion .panel:first-child {
+        border-top: solid 1px #474747;
+    }
+
+    .footer #accordion .motto {
+        clear: both;
+        padding: 15px 15px 0;
+        font-size: 1.66667em;
+        text-align: center;
+    }
+
+    .footer #accordion .motto a {
+        margin: 9px 2%;
+    }
+
+    .footer #accordion .motto img {
+        display: block;
+        max-width: 80%;
+        margin: 0 auto 15px;
+    }
+
+    .footer #accordion .motto .vertical {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .footer {
+        padding: 20px 0;
+    }
+}
+
+.bottom {
+    overflow: hidden;
+    padding: 10px;
+    background-color: #3b3b3b;
+    color: #ccc;
+    text-align: center;
+    line-height: 1.1em;
+}
+
+.bottom a:link {
+    color: #ccc;
+}
+
+.bottom a:visited {
+    color: #ccc;
+}
+
+.bottom a:hover {
+    color: #ccc;
+}
+
+.bottom a:active {
+    color: #ccc;
+}
+
+.bottom p {
+    margin: 0 !important;
+    padding-bottom: 2px;
+}
+
+@media (min-width: 768px) {
+    .bottom {
+        font-size: .625em;
+    }
+}
+
+@media (max-width: 767px) {
+    .bottom {
+        font-size: .55556em;
+    }
+}
+
+/*
+Theme Name: Purdue 2014
+Theme URI: http://purdue.edu/students
+Description: Official Purdue University theme developed for WordPress and based on the 2014 web templates designed by Purdue Marketing and Media. Purdue Twenty Fourteen is fully responsive and is based on Twitter Bootstrap v 3.1.0. IMPORTANT - This theme requires the use of the "Advanced Custom Fields" plugin (documentation at http://www.advancedcustomfields.com) for ease of content entry. Please activate it in your plugins direcotry. This theme also includes Bootstrap Nav Walker (https://github.com/twittem/wp-bootstrap-navwalker) for navigation menu functionality. CREATE A MENU NAMED "PRIMARY" (without "") IN ORDER FOR THE NAVIGATION TO FUNCTION PROPERLY. Please follow Purdue Marketing Web Guidelines found at http://www.purdue.edu/marketing/toolkit/web/index.html. To create "colorized" photo effects for banners, buttons, and other Purdue branded assets, please visit http://www.purdue.edu/marketing/toolkit/web/multiplied.html for procedures. It is recommended to use Modern Tribe's "The Events Calendar" plugin found at http://wordpress.org/plugins/the-events-calendar/ for events. This theme also utilizes Font Awesome (http://fortawesome.github.io/Font-Awesome/) and Glyphicons Halflings set, along with the numerous components of Twitter Bootstrap (http://getbootstrap.com/components/).
+Author: James Britton
+Author URI: http://web.ics.purdue.edu/~jbritto
+Version: 1.0
+Tags: Responsive, Bootstrap, Purdue, 2014, Font Awesome, Advanced Custom Fields, The Events Calendar
+
+License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+License URI: http://creativecommons.org/licenses/by-sa/3.0/
+
+*/
+/* WordPress CSS fixes */
+.maincontent a {
+    color: #a3792c;
+}
+
+.maincontent img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Alignment */
+.alignleft {
+    float: left;
+}
+
+.alignright {
+    float: right;
+}
+
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.sidenav h2.widgettitle {
+    margin-top: 0 !important;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+div.sidecontent h5.widgettitle {
+    margin-top: 0 !important;
+}
+
+div.sidenav.col-lg-3.col-md-3.col-sm-3 {
+    list-style-type: none;
+}
+
+img.attachment-single-post-thumbnail.wp-post-image {
+    width: 650px;
+    max-width: 100%;
+    height: auto;
+}
+
+.article-feature-image img {
+    width: 650px;
+    max-width: 100%;
+    height: auto;
+}
+
+ul.display-posts-listing {
+    list-style-type: none;
+    padding: 0;
+}
+
+li.listing-item {
+    clear: both;
+    margin-bottom: 90px;
+}
+
+img.attachment-thumbnail.wp-post-image {
+    float: left;
+    margin-right: 5px;
+}
+
+blockquote.alignleft,figure.wp-caption.alignleft,img.alignleft {
+    margin: 7px 24px 7px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 7px 14px 7px 0;
+}
+
+blockquote.alignright,figure.wp-caption.alignright,img.alignright {
+    margin: 7px 0 7px 24px;
+}
+
+.wp-caption.alignright {
+    margin: 7px 0 7px 14px;
+}
+
+blockquote.aligncenter,img.aligncenter,.wp-caption.aligncenter {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.site-content blockquote.alignleft,.site-content blockquote.alignright {
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-top: 17px;
+    width: 50%;
+}
+
+.site-content blockquote.alignleft p,.site-content blockquote.alignright p {
+    margin-bottom: 17px;
+}
+
+.sidecontent ol.hfeed.vcalendar {
+    padding: 0;
+}
+
+ol.hfeed.vcalendar {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.rsswidget img {
+    float: right;
+}
+
+.tab-pane h2 {
+    font-size: 16px;
+    padding: 0 15px;
+    margin-bottom: 0;
+}
+
+.comments-area input {
+    max-width: 100%;
+}
+
+.comments-area textarea {
+    max-width: 100%;
+}
+/*
+Theme Name: Purdue 2014
+Theme URI: https://www.purdue.edu/purdue/css/styles.css
+Description: Official Purdue University theme developed for WordPress and based on the 2014 web templates designed by Purdue Marketing and Media. Purdue Twenty Fourteen is fully responsive and is based on Twitter Bootstrap v 3.1.0. IMPORTANT - This theme requires the use of the "Advanced Custom Fields" plugin (documentation at http://www.advancedcustomfields.com) for ease of content entry. Please activate it in your plugins direcotry. This theme also includes Bootstrap Nav Walker (https://github.com/twittem/wp-bootstrap-navwalker) for navigation menu functionality. CREATE A MENU NAMED "PRIMARY" (without "") IN ORDER FOR THE NAVIGATION TO FUNCTION PROPERLY. Please follow Purdue Marketing Web Guidelines found at http://www.purdue.edu/marketing/toolkit/web/index.html. To create "colorized" photo effects for banners, buttons, and other Purdue branded assets, please visit http://www.purdue.edu/marketing/toolkit/web/multiplied.html for procedures. It is recommended to use Modern Tribe's "The Events Calendar" plugin found at http://wordpress.org/plugins/the-events-calendar/ for events. This theme also utilizes Font Awesome (http://fortawesome.github.io/Font-Awesome/) and Glyphicons Halflings set, along with the numerous components of Twitter Bootstrap (http://getbootstrap.com/components/).
+Author: James Britton
+Author URI: http://web.ics.purdue.edu/~jbritto
+Version: 1.0
+Tags: Responsive, Bootstrap, Purdue, 2014, Font Awesome, Advanced Custom Fields, The Events Calendar
+
+
+*/
+.carousel-caption {
+    left: 20px;
+    right: auto;
+    text-align: left;
+    padding: 0;
+}
+
+.carousel-caption h2 {
+    background-color: #a3792c;
+    color: #fff;
+    text-shadow: none;
+    font-size: 18px;
+    padding: 10px;
+    margin: 0;
+    display: inline-block;
+}
+
+.carousel-caption p {
+    background-color: #fff;
+    text-shadow: none;
+    font-size: 12px;
+    padding: 10px;
+    margin: 0;
+    color: #000;
+}
+
+.carousel-control {
+    opacity: 1;
+    color: #ccc;
+    text-shadow: none;
+}
+
+.carousel-control:hover {
+    color: #333;
+}
+
+.carousel-control.left,.carousel-control.right {
+    background: none;
+    height: 100%;
+    width: 25px;
+    font-size: 20px;
+}
+
+.carousel-control .fa {
+    top: 50%;
+    position: relative;
+}
+
+.carousel-indicators {
+/*bottom: -10px;*/
+    display: none;
+}
+
+.carousel-indicators li {
+    border-color: #ccc;
+}
+
+.carousel-indicators .active {
+    background-color: #ccc;
+    width: 11px;
+    height: 11px;
+}
+
+/* Non-Mobile */
+@media only screen and (min-width: 768px) {
+    .footer .container .row div .collapse {
+        display: block;
+    }
+}
+
+@media print {
+    .navbar,.breadcrumb,.sidenav,.sidecontent,.rightnav,.footer .panel,.motto,.bottom {
+        display: none !important;
+    }
+
+    .top .logo a img {
+        width: 30%;
+    }
+
+    .top .department a {
+        border: 0;
+        padding-left: 0;
+        padding-bottom: 20px;
+        color: #000;
+    }
+
+    /*Purdue Homepage*/
+    .boxes .row div {
+        display: block;
+        width: 100%;
+    }
+
+    .boxes .row div a {
+        border: 0;
+        padding: 10px;
+    }
+
+    .boxes .row div a .caption {
+        color: #000;
+    }
+
+    /*Audience Page*/
+    .audience,.audiencefeature {
+        background-image: transparent !important;
+    }
+
+    .audience .btn {
+        border: 1px solid #000;
+        margin-top: 0;
+        background-color: #fff;
+        color: #000;
+    }
+
+    .resources .links {
+        display: block;
+        width: 100%;
+    }
+
+    .events {
+        display: none;
+    }
+}
+
+.sidenav,
+.sidecontent {
+  padding-bottom:20px;
+}
+.sidenav ul {
+  list-style:none;
+  padding:0px;
+  margin-bottom:0px;
+  background-color:#f5f5f5;
+  margin-top: 10px;
+}
+
+.sidenav ul li.on a {
+  border-left: 3px solid #ad1f65;
+
+}
+
+.sidenav ul li.on a:hover {
+  background-color: rgba(173,31,101,0.8);
+  border-left: 3px solid #ad1f65;
+}
+
+.sidenav ul li a {
+  color:#333;
+  display:block;
+  padding:10px 15px 10px 12px;
+  border-left: 3px solid #e3e2e2;
+  text-decoration: none;
+  font-weight: normal;
+}
+.sidenav ul li a:hover {
+  background-color:#999;
+  text-decoration:none;
+  color:#fff;
+  border-left: 3px solid #666;
+}
+.sidenav ul li a.linkout{
+  background:url('/webRoot/SHARE/Images/Icons/link.png')no-repeat 95% !important;;
+}
+
+.sidenav ul li a.linkout:hover{
+  background:#999 url('/webRoot/SHARE/Images/Icons/linklight.png')no-repeat 95% !important;;
+}
+
+.sidenav .dropdown-submenu > a:after {
+  margin-right:0px;
+}
+.sidenav .dropdown-submenu:hover > a:after {
+  border-left-color: #666;
+}
+.sidenav .dropdown-menu {
+  margin:0px;
+  border:0px;
+}
+.sidenav li.secondary a {
+  padding-left:35px;
+  background-color:#ededed;
+}
+
+.sidecontent.news h3 {
+  margin-top:0px;
+}
+.sidecontent.news ul {
+  list-style-type: square;
+  padding-left:15px;
+  margin:0px;
+}
+.sidecontent.news ul li {
+  padding-bottom: 15px;
+}
+.sidecontent.news ul li a {
+  color:#333;
+  line-height:14px;
+  font-size:12px;
+}
+
+/* updated banner css */
+.full-width-banner {
+    position: relative;
+    z-index: 1;
+    height: 600px;
+    width: 100%;
+    background: 50% no-repeat;
+    background-size: cover;
+
+}
+
+.shader{
+  background-color:rgba(0,0,0,.6);
+  margin-top: 30%;
+  padding: 2em;
+}
+.fullwidthheader{
+  color: #fff !important;
+    font-size: 3em;
+    text-shadow: 2px 2px rgba(0,0,0,0.9);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    line-height: 1em;
+
+}
+
+.fullwidthparagraph{
+  color: #FFD100;
+    font-size: 2.2em;
+    margin-top: 2%;
+    text-shadow: 2px 2px rgba(0,0,0,0.9);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 1em;
+
+}
+
+
+@media (max-width: 768px){
+.full-width-banner  {
+ height: 250px;
+}
+.shader{
+margin-top: 10%;
+}
+.fullwidthheader{
+font-size: 1.5em;
+}
+.fullwidthparagraph{
+font-size: 1em;
+}
+
+}
+
+@media (max-width: 400px){
+.shader{
+margin-top:5%;
+}
+}
