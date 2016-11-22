@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-<div class="full-width-banner" style="background-image: url('/terra/wp-content/themes/child_theme/terra-header.jpg');">
+<div class="full-width-banner" style="background-image: url('PLACE IMAGE URL HERE - 1660 x 600');">
   <div class="container">
     <div class="col-lg-12">
       <div class="shader">
