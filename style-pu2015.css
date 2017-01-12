@@ -2909,6 +2909,11 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
 
 */
 /* WordPress CSS fixes */
+
+.maincontent {
+    padding-top:10px;
+}
+
 .maincontent a {
     color: #a3792c;
 }
