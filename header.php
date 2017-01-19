@@ -32,6 +32,7 @@ var _gaq = _gaq || [];
   // change the account number in the line below to your account
   // The number here is for the main Purdue analytics account
   _gaq.push(['_setAccount', 'UA-2785081-1']);
+  _gaq.push(['_setAccount', 'UA-31151555-1']);
   _gaq.push(['_trackPageview']);
 
   // If you're tracking to your own account above and would also like track page views
