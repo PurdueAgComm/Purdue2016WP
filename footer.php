@@ -8,7 +8,8 @@
       <div class="panel-collapse collapse" id="footerone">
         <div class="panel-body">
           <ul>
-            <li><a href="https://one.purdue.edu/">Employee Portal</a></li>
+            <li class="desktopHeader hidden-xs hidden-sm">Communication</li>
+            <li><a href="https://www.purdue.edu/employeeportal">Employee Portal</a></li>
             <li><a href="http://www.itap.purdue.edu/learning/tools/blackboard/">Blackboard</a></li>
             <li><a href="http://www.purdue.edu/newsroom/purduetoday/">Purdue Today</a></li>
             <li><a href="https://mymail.purdue.edu/">myMail</a></li>
@@ -25,6 +26,7 @@
       <div class="panel-collapse collapse" id="footertwo">
         <div class="panel-body">
           <ul>
+            <li class="desktopHeader hidden-xs hidden-sm">University Resources</li>
             <li><a href="http://www.purdue.edu/purdue/information_for/for_faculty_staff_re.html">Faculty &amp; Staff</a></li>
             <li><a href="http://www.purdue.edu/ais/">AIS</a></li>
             <li><a href="https://www.purdue.edu/physicalfacilities/">Physical Facilities</a></li>
@@ -42,8 +44,9 @@
       <div class="panel-collapse collapse" id="footerfour">
         <div class="panel-body">
           <?php
-          if(is_active_sidebar('footerfour')){
-          dynamic_sidebar('footerfour');
+          if(is_active_sidebar('footerthree')){
+            echo '<li class="desktopHeader hidden-xs hidden-sm">CoA Resources</li>';
+            dynamic_sidebar('footerthree');
           }
           ?>
         </div>
@@ -55,9 +58,11 @@
       </div>
       <div class="panel-collapse collapse" id="footerthree">
         <div class="panel-body">
+
           <?php
-          if(is_active_sidebar('footerthree')){
-          dynamic_sidebar('footerthree');
+          if(is_active_sidebar('footerfour')){
+            echo '<li class="desktopHeader hidden-xs hidden-sm">Publication & Resources</li>';
+          dynamic_sidebar('footerfour');
           }
           ?>
         </div>
