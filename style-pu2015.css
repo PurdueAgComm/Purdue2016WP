@@ -72,9 +72,9 @@ h1 {
     padding-top: 0;
     padding-bottom: .25em;
     font-family: "Open Sans", Arial, sans-serif;
-    font-weight: 700;
-    color: #b1810b;
-    font-size: 2.25em;
+    color: #000;
+    font-size: 2.3em;
+    font-weight: 600;
     line-height: 1.1em;
 }
 
@@ -82,15 +82,16 @@ h2 {
     padding-top: 1em;
     padding-bottom: .15em;
     font-family: "Open Sans", Arial, sans-serif;
-    color: #b1810b;
+    color: #000;
     font-size: 2em;
+    font-weight: 600;
     line-height: 1.2em;
 }
 
 h3 {
     padding-top: 1em;
     font-family: "Open Sans", Arial, sans-serif;
-    color: #b1810b;
+    color: #000;
     font-size: 1.75em;
     line-height: 1.2em;
 }
@@ -98,16 +99,16 @@ h3 {
 h4 {
     padding-top: 1em;
     font-family: "Open Sans", Arial, sans-serif;
-    font-weight: 700;
-    font-size: 1.5em;
+    font-size: 1em;
+    font-weight: 800;
     line-height: 1.2em;
 }
 
 h5 {
     padding-top: 1.5em;
     font-family: "Open Sans", Arial, sans-serif;
-    font-weight: 700;
-    font-size: 1.25em;
+    font-size: 1em;
+    font-weight: 800;
     line-height: 1.2em;
     text-transform: uppercase;
 }
@@ -115,8 +116,8 @@ h5 {
 h6 {
     padding-top: 2em;
     font-family: "Open Sans", Arial, sans-serif;
-    font-weight: 700;
     font-size: 1em;
+    font-weight: 800;
     line-height: 1.2em;
     text-transform: uppercase;
 }
@@ -186,13 +187,13 @@ big {
 }
 
 a:link {
-    color: #000;
-    font-weight: 700;
-    text-decoration: underline;
+color: #000;
+font-weight: 600;
+text-decoration: underline;
 }
 
 a:visited {
-    color: #000;
+    color: #ad1f65;
     font-weight: 700;
     text-decoration: underline;
 }
@@ -2914,10 +2915,6 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
     padding-top:10px;
 }
 
-.maincontent a {
-    color: #a3792c;
-}
-
 .maincontent img {
     max-width: 100%;
     height: auto;
@@ -3306,3 +3303,11 @@ font-size: 1em;
 margin-top:5%;
 }
 }
+
+.desktopHeader {
+    color: #fefefe;
+    font-weight: 600;
+    font-size: larger;
+    list-style: none;
+}
+
