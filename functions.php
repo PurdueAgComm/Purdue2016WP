@@ -10,6 +10,8 @@ add_action( 'wp_enqueue_scripts', 'updated_purduetwentyfourteen_scripts' );
 function purdue2015_parent_theme_enqueue_styles() {
   wp_deregister_style( 'style-css' );
   wp_enqueue_style('purdue2015-style', get_stylesheet_directory_uri() . '/style-pu2015.css');
+  // does your site have specific styles? create the .css called site-styles.css and uncomment the line below
+  //wp_enqueue_style('site-styles', get_stylesheet_directory_uri() . '/site-styles.css');
   wp_enqueue_style('montserrat', 'https://fonts.googleapis.com/css?family=Montserrat');
   wp_enqueue_style('open-sans', 'https://fonts.googleapis.com/css?family=Open+Sans');
   wp_enqueue_style('archivo-narrow-font', 'https://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic' );
