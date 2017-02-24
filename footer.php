@@ -9,7 +9,7 @@
         <div class="panel-body">
           <ul>
             <li class="desktopHeader hidden-xs hidden-sm">Communication</li>
-            <li><a href="https://www.purdue.edu/employeeportal">Employee Portal</a></li>
+            <li><a href="https://one.purdue.edu/">Employee Portal</a></li>
             <li><a href="http://www.itap.purdue.edu/learning/tools/blackboard/">Blackboard</a></li>
             <li><a href="http://www.purdue.edu/newsroom/purduetoday/">Purdue Today</a></li>
             <li><a href="https://mymail.purdue.edu/">myMail</a></li>

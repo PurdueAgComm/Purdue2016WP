@@ -158,7 +158,7 @@ var _gaq = _gaq || [];
                       </ul>
                       <ul class="nav navbar-nav right quicklinks"><p class="hide">Quick Links</p>
             <li><a href="http://www.purdue.edu/purdue/admissions/index.php#linksRow">Apply</a></li>
-            <li><a href="https://ag.purdue.edu/agcomm/pages/news.aspx">News</a></li>
+            <li><a href="https://ag.purdue.edu/Pages/News.aspx">News</a></li>
             <li><a href="https://ag.purdue.edu/oap/Pages/visit_us.aspx">Visit</a></li>
             <li><a href="https://ag.purdue.edu/giving/Pages/gift1.aspx">Give</a></li>
             <li><a href="http://www.purdue.edu/emergency/index.html">Emergency</a></li>
